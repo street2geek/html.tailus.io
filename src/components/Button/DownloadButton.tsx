@@ -8,7 +8,7 @@ export const DownloadButton = ({ downloadLink, githubLink, size = 'md' }: { down
             <DropdownMenu.Trigger asChild>
                 <Button.Root variant="solid" intent="neutral" size={size}>
                     <Button.Icon type="leading">
-                        <DownloadIcon className="!size-4" />
+                        <DownloadIcon className="size-4!" />
                     </Button.Icon>
                     <Button.Label>Download</Button.Label>
                 </Button.Root>

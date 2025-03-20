@@ -104,7 +104,7 @@ document.addEventListener('astro:page-load', () => {
         });
 
         trigger.addEventListener('focus', showTooltip);
-        trigger.addEventListener('blur', hideTooltip);
+        trigger.addEventListener('blur-xs', hideTooltip);
     });
 
     document.addEventListener('keydown', (event) => {

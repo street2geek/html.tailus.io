@@ -45,7 +45,7 @@ export default `@tailwind base;
 
         color : var(--body-text-color);
 
-        @apply dark:[--ui-border-color:theme('colors.gray.800')] dark:[--ui-disabled-bg:theme('colors.gray.900')] dark:[--ui-bg:theme('colors.gray.900/var(--ui-bg-opacity)')] dark:[--ui-soft-bg:theme('colors.gray.800')] dark:[--display-text-color:theme('colors.white')] dark:[--body-text-color:theme('colors.gray.300')] dark:[--placeholder-text-color:theme('colors.gray.600')]
+        @apply dark:[--ui-border-color:var(--color-gray-800)] dark:[--ui-disabled-bg:var(--color-gray-900)] dark:[--ui-bg:theme('colors.gray.900/var(--ui-bg-opacity)')] dark:[--ui-soft-bg:var(--color-gray-800)] dark:[--display-text-color:var(--color-white)] dark:[--body-text-color:var(--color-gray-300)] dark:[--placeholder-text-color:var(--color-gray-600)]
     }
 
     *{
@@ -72,7 +72,7 @@ export default `@tailwind base;
         --input-outline : var(--ui-error-border);
         --title-text-color : theme(colors.danger.600);
 
-        @apply dark:[--title-text-color:theme(colors.danger.400)]
+        @apply dark:[--title-text-color:var(--color-danger-400)]
     }
 
     /* Data attributes */
@@ -125,19 +125,19 @@ export default `@tailwind base;
         --ui-bg-opacity: 0.75;
         --ui-bg: theme("colors.white/var(--ui-bg-opacity)");
 
-        @apply dark:[--ui-bg-opacity:0.5] dark:[--ui-border-color:theme(colors.gray.50/0.1)] dark:[--ui-bg:theme(colors.gray.700/var(--ui-bg-opacity))] dark:[--ui-soft-bg:theme(colors.gray.600/0.50)]
+        @apply dark:[--ui-bg-opacity:0.5] dark:[--ui-border-color:var(--color-gray-50)]/10 dark:[--ui-bg:var(--color-gray-700)]/(--ui-bg-opacity) dark:[--ui-soft-bg:var(--color-gray-600)]/50
     }
 
     [data-shade="800"] {
-        @apply dark:[--ui-border-color:theme(colors.gray.700)] dark:[--ui-bg:theme(colors.gray.800)] dark:[--ui-soft-bg:theme(colors.gray.900)]
+        @apply dark:[--ui-border-color:var(--color-gray-700)] dark:[--ui-bg:var(--color-gray-800)] dark:[--ui-soft-bg:var(--color-gray-900)]
     }
 
     [data-shade="900"] {
-        @apply dark:[--ui-border-color:theme(colors.gray.800)] dark:[--ui-bg:theme(colors.gray.900)] dark:[--ui-soft-bg:theme(colors.gray.800)] 
+        @apply dark:[--ui-border-color:var(--color-gray-800)] dark:[--ui-bg:var(--color-gray-900)] dark:[--ui-soft-bg:var(--color-gray-800)] 
     }
 
     [data-shade="950"] {
-        @apply dark:[--ui-border-color:theme(colors.gray.800)] dark:[--ui-bg:theme(colors.gray.950)] dark:[--ui-soft-bg:theme(colors.gray.800)]
+        @apply dark:[--ui-border-color:var(--color-gray-800)] dark:[--ui-bg:var(--color-gray-950)] dark:[--ui-soft-bg:var(--color-gray-800)]
     }
 }
 
@@ -252,7 +252,7 @@ export default `@tailwind base;
     /* Button */
 
     .btn{
-        @apply flex justify-center gap-2.5 items-center rounded-[--btn-radius] *:relative
+        @apply flex justify-center gap-2.5 items-center rounded-(--btn-radius) *:relative
     }
 
     .btn.variant-primary,.btn.variant-destructive,.btn.variant-neutral > .btn-label{
@@ -268,7 +268,7 @@ export default `@tailwind base;
     }
 
     .btn.variant-neutral,.btn.variant-primary,.btn.variant-destructive,.btn.variant-outlined{
-        @apply relative before:absolute bg-gradient-to-b shadow-sm before:rounded-[calc(var(--btn-radius)-1px)] before:border-t
+        @apply relative before:absolute bg-linear-to-b shadow-sm before:rounded-[calc(var(--btn-radius)-1px)] before:border-t
     }
 
     .btn.variant-neutral,.btn.variant-primary,.btn.variant-destructive,.btn.variant-soft{
@@ -346,11 +346,11 @@ export default `@tailwind base;
     /* Badge */
 
     .badge{
-        @apply rounded-[--badge-radius] flex items-center gap-1.5 size-fit border
+        @apply rounded-(--badge-radius) flex items-center gap-1.5 size-fit border
     }
 
     .badge.variant-neutral{
-        @apply bg-gray-500/10 border-gray-500/15 text-[--body-text-color] dark:bg-gray-500/15 dark:border-gray-500/20
+        @apply bg-gray-500/10 border-gray-500/15 text-(--body-text-color) dark:bg-gray-500/15 dark:border-gray-500/20
     }
 
     .badge.variant-info{
@@ -391,31 +391,31 @@ export default `@tailwind base;
 
     /* Form field, input and textarea */
     .field{
-        @apply relative space-y-2.5 *:has-[:disabled]:opacity-50 *:has-[:disabled]:pointer-events-none has-[:user-invalid]:[--caption-text-color:theme(colors.danger.600)] dark:has-[:user-invalid]:[--caption-text-color:theme(colors.danger.400)]
+        @apply relative space-y-2.5 has-disabled:*:opacity-50 has-disabled:*:pointer-events-none has-[:user-invalid]:[--caption-text-color:var(--color-danger-600)] dark:has-[:user-invalid]:[--caption-text-color:var(--color-danger-400)]
     }
 
     .input, .textarea{
-        @apply w-full placeholder-[--placeholder-text-color] text-[--title-text-color] rounded-[--input-radius]
+        @apply w-full placeholder-(--placeholder-text-color) text-(--title-text-color) rounded-(--input-radius)
     }
 
     .input.variant-outlined, .textarea.variant-outlined{
-        @apply outline-2 bg-transparent focus:outline-[--input-outline] -outline-offset-1 focus:outline border border-[--input-border]
+        @apply outline-2 bg-transparent focus:outline-(--input-outline) -outline-offset-1 focus:outline border border-(--input-border)
     }
 
     .input.variant-mixed, .textarea.variant-mixed{
-        @apply shadow-sm shadow-gray-950/5 dark:shadow-gray-950/35 outline-2 bg-[--ui-bg] focus:outline-[--input-outline] -outline-offset-1 focus:outline border border-[--input-border]
+        @apply shadow-sm shadow-gray-950/5 dark:shadow-gray-950/35 outline-2 bg-(--ui-bg) focus:outline-(--input-outline) -outline-offset-1 focus:outline border border-(--input-border)
     }
 
     .input.variant-soft, .textarea.variant-soft {
-        @apply outline-none bg-[--ui-soft-bg] focus:brightness-95 dark:focus:brightness-105
+        @apply outline-hidden bg-(--ui-soft-bg) focus:brightness-95 dark:focus:brightness-105
     }
 
     .input.variant-plain, .textarea.variant-plain {
-        @apply rounded-none outline-none bg-transparent
+        @apply rounded-none outline-hidden bg-transparent
     }
 
     .input.variant-bottomOutlined, .textarea.variant-bottomOutlined {
-        @apply rounded-none bg-transparent focus:outline-none border-b border-[--input-border] focus:border-[--input-outline] focus:border-b-2
+        @apply rounded-none bg-transparent focus:outline-hidden border-b border-(--input-border) focus:border-(--input-outline) focus:border-b-2
     }
 
     .input.sz-sm {
@@ -467,7 +467,7 @@ export default `@tailwind base;
     }
 
     .switch{
-        @apply block relative w-8 h-5 border transition duration-300 rounded-full bg-ui-soft dark:bg-[--ui-bg] has-[:checked]:border-white/5
+        @apply block relative w-8 h-5 border transition duration-300 rounded-full bg-ui-soft dark:bg-(--ui-bg) has-checked:border-white/5
     }
 
     .switch-thumb{
@@ -479,15 +479,15 @@ export default `@tailwind base;
     }
 
     .switch.variant-primary{
-        @apply has-[:checked]:bg-primary-600
+        @apply has-checked:bg-primary-600
     }
 
     .switch.variant-neutral{
-        @apply has-[:checked]:bg-gray-950 dark:has-[:checked]:bg-white
+        @apply has-checked:bg-gray-950 dark:has-checked:bg-white
     }
 
     .checkbox, .radio{
-        @apply block relative size-[1.125rem] border border-gray-300 dark:border-[--ui-border-color] transition duration-300 rounded shadow-sm shadow-gray-950/5 dark:bg-ui has-[:checked]:bg-primary-600 has-[:checked]:border-white/5
+        @apply block relative size-[1.125rem] border border-gray-300 dark:border-(--ui-border-color) transition duration-300 rounded shadow-sm shadow-gray-950/5 dark:bg-ui has-checked:bg-primary-600 has-checked:border-white/5
     }
 
     .checkbox-icon{
@@ -495,11 +495,11 @@ export default `@tailwind base;
     }
 
     .radio-indicator{
-        @apply absolute inset-0 m-auto size-2 rounded-full peer-checked:shadow peer-checked:shadow-gray-950/25 transition duration-300 bg-gray-950 dark:bg-white scale-75 opacity-0 group-hover:opacity-25 peer-checked:scale-100 peer-checked:bg-white peer-checked:opacity-100
+        @apply absolute inset-0 m-auto size-2 rounded-full peer-checked:shadow-2xs peer-checked:shadow-gray-950/25 transition duration-300 bg-gray-950 dark:bg-white scale-75 opacity-0 group-hover:opacity-25 peer-checked:scale-100 peer-checked:bg-white peer-checked:opacity-100
     }
 
     .checkbox, .radio, .switch{
-        @apply overflow-hidden has-[:focus-visible]:outline has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-primary-600
+        @apply overflow-hidden has-focus-visible:outline has-focus-visible:outline-2 has-focus-visible:outline-offset-2 has-focus-visible:outline-primary-600
     }
 
     .checkbox>input, .radio>input, .switch>input{
@@ -508,19 +508,19 @@ export default `@tailwind base;
     /* Card */
 
     .card{
-        @apply p-[--card-padding] rounded-[--card-radius]
+        @apply p-(--card-padding) rounded-(--card-radius)
     }
 
     .card.variant-outlined {
-        @apply border bg-[--ui-bg]
+        @apply border bg-(--ui-bg)
     }
 
     .card.variant-mixed {
-        @apply border bg-[--ui-bg] shadow shadow-gray-950/5
+        @apply border bg-(--ui-bg) shadow shadow-gray-950/5
     }
 
     .card.variant-soft{
-        @apply bg-[--ui-soft-bg]
+        @apply bg-(--ui-soft-bg)
     }
 
     /* Kbd */
@@ -540,7 +540,7 @@ export default `@tailwind base;
     }
 
     .code.variant-gray {
-        @apply bg-[--ui-soft-bg] text-[--body-text-color]
+        @apply bg-(--ui-soft-bg) text-(--body-text-color)
     }
 
     .code.variant-neutral {
@@ -591,7 +591,7 @@ export default `@tailwind base;
 
     /* Separator */
     .separator {
-        @apply bg-[--ui-border-color] h-px w-full block
+        @apply bg-(--ui-border-color) h-px w-full block
     }
 
     .separator.vertical{
@@ -600,7 +600,7 @@ export default `@tailwind base;
 
     /* Annonce */
     .annonce{
-        @apply flex items-center gap-3 w-fit rounded-[--annonce-radius]
+        @apply flex items-center gap-3 w-fit rounded-(--annonce-radius)
     }
 
     .annonce.variant-outlined{
@@ -608,11 +608,11 @@ export default `@tailwind base;
     }
 
     .annonce.variant-soft{
-        @apply bg-[--ui-soft-bg]
+        @apply bg-(--ui-soft-bg)
     }
 
     .annonce.variant-mixed{
-        @apply border bg-[--ui-bg] shadow-sm shadow-gray-950/5 dark:shadow-gray-950/25
+        @apply border bg-(--ui-bg) shadow-sm shadow-gray-950/5 dark:shadow-gray-950/25
     }
 
     .annonce.sz-xs{
@@ -661,7 +661,7 @@ export default `@tailwind base;
 
     /* Progress */
     .progress {
-        @apply bg-[--ui-soft-bg] rounded-full overflow-hidden
+        @apply bg-(--ui-soft-bg) rounded-full overflow-hidden
     }
 
     .progress.sz-xs {
@@ -709,7 +709,7 @@ export default `@tailwind base;
 
     /* Avatar */
     .avatar{
-        @apply block border border-gray-950/5 dark:border-white/5 relative rounded-[--avatar-radius] *:rounded-[--avatar-radius] before:hidden
+        @apply block border border-gray-950/5 dark:border-white/5 relative rounded-(--avatar-radius) *:rounded-(--avatar-radius) before:hidden
     }
 
     .avatar img{
@@ -717,7 +717,7 @@ export default `@tailwind base;
     }
 
     .avatar.avatar-status{
-        @apply before:absolute before:z-[1] before:block before:right-px before:rounded-full before:border-white dark:before:border-gray-950
+        @apply before:absolute before:z-1 before:block before:right-px before:rounded-full before:border-white dark:before:border-gray-950
     }
 
     .avatar.sz-xs, .avatar.sz-sm{
@@ -785,28 +785,28 @@ export default `@tailwind base;
     }
 
     .callout{
-        @apply p-5 border rounded-[--card-radius]
+        @apply p-5 border rounded-(--card-radius)
     }
 
     .callout-title{
-        @apply font-medium text-[--title-text-color]
+        @apply font-medium text-(--title-text-color)
     }
 
     .callout-description{
-        @apply mt-1 text-[--body-text-color]
+        @apply mt-1 text-(--body-text-color)
     }
 
     .callout-link{
-        @apply text-[--title-text-color] underline font-medium
+        @apply text-(--title-text-color) underline font-medium
     }
 
     .callout.variant-warning{
-        @apply bg-warning-50 [--title-text-color:theme(colors.warning.950)] dark:bg-warning-500/5 dark:border-white/5 dark:[--title-text-color:theme(colors.white)]
+        @apply bg-warning-50 [--title-text-color:var(--color-warning-950)] dark:bg-warning-500/5 dark:border-white/5 dark:[--title-text-color:var(--color-white)]
     }
     .callout.variant-danger{
-        @apply bg-danger-50 [--title-text-color:theme(colors.danger.950)] dark:bg-danger-500/5 dark:border-white/5 dark:[--title-text-color:theme(colors.white)]
+        @apply bg-danger-50 [--title-text-color:var(--color-danger-950)] dark:bg-danger-500/5 dark:border-white/5 dark:[--title-text-color:var(--color-white)]
     }
     .callout.variant-neutral{
-        @apply bg-gray-50 [--title-text-color:theme(colors.gray.950)] dark:bg-gray-500/5 dark:[--title-text-color:theme(colors.white)]
+        @apply bg-gray-50 [--title-text-color:var(--color-gray-950)] dark:bg-gray-500/5 dark:[--title-text-color:var(--color-white)]
     }
 }`

@@ -119,7 +119,7 @@ const htmlCode = `<footer class="border-b bg-white pt-20 dark:bg-transparent">
                 </div>
             </div>
             <form class="row-start-1 border-b pb-8 text-sm md:col-span-2 md:border-none lg:col-span-1">
-                <div class="field !space-y-4">
+                <div class="field space-y-4!">
                     <label for="mail" class="text-title font-medium">Newsletter</label>
                     <div class="flex gap-2">
                         <input type="email" id="mail" name="mail" placeholder="Your email" class="input variant-mixed sz-sm" />
@@ -137,7 +137,7 @@ const htmlCode = `<footer class="border-b bg-white pt-20 dark:bg-transparent">
                 <div class="field">
                     <div class="relative">
                         <svg class="text-body pointer-events-none absolute inset-y-0 right-2.5 my-auto opacity-75" xmlns="http://www.w3.org/2000/svg" width="0.75rem" height="0.75rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 15 5 5 5-5"></path><path d="m7 9 5-5 5 5"></path></svg>
-                        <select class="input variant-outlined sz-md appearance-none !pr-12">
+                        <select class="input variant-outlined sz-md appearance-none pr-12!">
                             <option value="1">English</option>
                             <option value="2">Espanol</option>
                             <option value="3">Français</option>
@@ -274,7 +274,7 @@ export default function FooterSection(){
                         </div>
                     </div>
                     <form className="row-start-1 border-b pb-8 text-sm md:col-span-2 md:border-none lg:col-span-1">
-                        <div className="field !space-y-4">
+                        <div className="field space-y-4!">
                             <label htmlFor="mail" className="text-title font-medium">Newsletter</label>
                             <div className="flex gap-2">
                                 <input type="email" id="mail" name="mail" placeholder="Your email" className="input variant-mixed sz-sm" />
@@ -292,7 +292,7 @@ export default function FooterSection(){
                         <div className="field">
                             <div className="relative">
                                 <svg className="text-body pointer-events-none absolute inset-y-0 right-2.5 my-auto opacity-75" xmlns="http://www.w3.org/2000/svg" width="0.75rem" height="0.75rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 15 5 5 5-5"></path><path d="m7 9 5-5 5 5"></path></svg>
-                                <select className="input variant-outlined sz-md appearance-none !pr-12">
+                                <select className="input variant-outlined sz-md appearance-none pr-12!">
                                     <option value="1">English</option>
                                     <option value="2">Espanol</option>
                                     <option value="3">Français</option>

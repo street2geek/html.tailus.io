@@ -25,7 +25,7 @@ export interface BlockPreviewProps {
     forHome?: boolean
 }
 
-const radioItem = 'rounded-[calc(var(--btn-radius)-2px)] duration-300 flex border border-transparent items-center justify-center h-7 px-2.5 gap-2 text-[--caption-text-color] transition-[color] hover:text-[--body-text-color] data-[state=checked]:text-[--title-text-color] data-[state=checked]:bg-white data-[state=checked]:shadow dark:data-[disabled]:bg-transparent dark:data-[state=checked]:shadow-gray-950/50 dark:data-[state=checked]:border-white/5 dark:data-[state=checked]:bg-[--ui-soft-bg]'
+const radioItem = 'rounded-[calc(var(--btn-radius)-2px)] duration-300 flex border border-transparent items-center justify-center h-7 px-2.5 gap-2 text-(--caption-text-color) transition-[color] hover:text-(--body-text-color) data-[state=checked]:text-(--title-text-color) data-[state=checked]:bg-white data-[state=checked]:shadow-2xs dark:data-disabled:bg-transparent dark:data-[state=checked]:shadow-gray-950/50 dark:data-[state=checked]:border-white/5 dark:data-[state=checked]:bg-(--ui-soft-bg)'
 
 const DEFAULTSIZE = 100
 const SMSIZE = 30
@@ -41,11 +41,11 @@ export const BlockPreview: React.FC<BlockPreviewProps> = ({ code, src, title, fo
     const isLarge = useMedia('(min-width: 1024px)')
 
     return (
-        <div className="group mb-32 border-b [--ui-border-color:theme(colors.gray.200/0.75)] dark:[--ui-border-color:theme(colors.gray.800/0.6)]">
+        <div className="group mb-32 border-b [--ui-border-color:var(--color-gray-200)]/75 dark:[--ui-border-color:var(--color-gray-800)]/60">
             <div className="relative border-y">
                 <div className="absolute inset-x-4 -top-14 bottom-0 mx-auto max-w-7xl lg:inset-x-0">
-                    <div className="absolute bottom-0 left-0 top-0 w-px bg-gradient-to-b from-transparent to-[--ui-border-color] to-75% dark:to-[--ui-border-color]"></div>
-                    <div className="absolute bottom-0 right-0 top-0 w-px bg-gradient-to-b from-transparent to-[--ui-border-color] to-75% dark:to-[--ui-border-color]"></div>
+                    <div className="absolute bottom-0 left-0 top-0 w-px bg-linear-to-b from-transparent to-(--ui-border-color) to-75% dark:to-(--ui-border-color)"></div>
+                    <div className="absolute bottom-0 right-0 top-0 w-px bg-linear-to-b from-transparent to-(--ui-border-color) to-75% dark:to-(--ui-border-color)"></div>
                 </div>
                 <div className={twMerge('relative z-10 mx-auto flex max-w-7xl justify-between px-8 py-2', forHome && 'max-w-5xl border-x px-6')}>
                     <div className="flex items-center gap-3">
@@ -55,7 +55,7 @@ export const BlockPreview: React.FC<BlockPreviewProps> = ({ code, src, title, fo
                         {code && (
                             <>
                                 <Separator fancy orientation="vertical" className="hidden h-4 lg:block" />
-                                <RadioGroup.Root className="flex gap-0.5 rounded-[--btn-radius] border border-gray-950/5 bg-gray-950/5 p-0.5 dark:border-white/5 dark:bg-gray-950/50">
+                                <RadioGroup.Root className="flex gap-0.5 rounded-(--btn-radius) border border-gray-950/5 bg-gray-950/5 p-0.5 dark:border-white/5 dark:bg-gray-950/50">
                                     <RadioGroup.Item onClick={() => setMode('preview')} aria-label="Block preview" value="100" checked={mode == 'preview'} className={radioItem}>
                                         <Eye className="size-4" />
                                         <span className="hidden text-sm md:block">Preview</span>
@@ -126,8 +126,8 @@ export const BlockPreview: React.FC<BlockPreviewProps> = ({ code, src, title, fo
             </div>
             <div className="relative">
                 <div className="absolute inset-x-0 -bottom-14 mx-auto h-14 max-w-7xl">
-                    <div className="absolute bottom-0 left-0 top-0 w-px bg-gradient-to-b from-[--ui-border-color] dark:from-[--ui-border-color]"></div>
-                    <div className="absolute bottom-0 right-0 top-0 w-px bg-gradient-to-b from-[--ui-border-color] dark:from-[--ui-border-color]"></div>
+                    <div className="absolute bottom-0 left-0 top-0 w-px bg-linear-to-b from-(--ui-border-color) dark:from-(--ui-border-color)"></div>
+                    <div className="absolute bottom-0 right-0 top-0 w-px bg-linear-to-b from-(--ui-border-color) dark:from-(--ui-border-color)"></div>
                 </div>
                 <div className="relative z-10 mx-auto max-w-7xl px-4 lg:border-r lg:px-0">
                     <div className={twMerge('bg-white dark:bg-transparent', mode == 'code' && 'hidden')}>

@@ -20,11 +20,11 @@ import tlsBundle from '../images/tls-bundle-thumb.png'
 
     <section class="relative z-10 space-y-12 pt-20 will-change-transform sm:pt-20">
         <Container>
-            <h1 class="text-title mt-8 text-balance bg-gradient-to-b text-4xl font-bold sm:text-5xl lg:text-6xl">Reusable Tailwind Component classes</h1>
+            <h1 class="text-title mt-8 text-balance bg-linear-to-b text-4xl font-bold sm:text-5xl lg:text-6xl">Reusable Tailwind Component classes</h1>
             <p class="mb-12 mt-6 text-xl md:max-w-lg lg:max-w-xl">Free up your time with pre-built classes that update site-wide automatically. Focus on building, not fixing.</p>
 
             <div class="flex gap-3">
-                <a href="/get-started/installation" class="btn variant-neutral sz-md w-fit gap-2.5 bg-gray-950 !from-gray-900 to-gray-950 dark:!from-white">
+                <a href="/get-started/installation" class="btn variant-neutral sz-md w-fit gap-2.5 bg-gray-950 from-gray-900! to-gray-950 dark:from-white!">
                     <svg class="size-4 opacity-75" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"></path>
                     </svg>
@@ -44,7 +44,7 @@ import tlsBundle from '../images/tls-bundle-thumb.png'
         </Container>
     </section>
 
-    <section class="relative border-b border-gray-200 [--ui-bg:theme(colors.white/0.75)] [--ui-border-color:theme(colors.gray.950/0.15)] dark:border-gray-800 dark:[--ui-bg:theme(colors.gray.900)] dark:[--ui-border-color:theme(colors.gray.800)]">
+    <section class="relative border-b border-gray-200 [--ui-bg:var(--color-white)]/75 [--ui-border-color:var(--color-gray-950)]/15 dark:border-gray-800 dark:[--ui-bg:var(--color-gray-900)] dark:[--ui-border-color:var(--color-gray-800)]">
         <svg class="absolute inset-0 mx-auto w-full text-secondary-100 blur-3xl dark:hidden dark:text-white/5" viewBox="0 0 807 355" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M496.5 210C632.9 186.8 760.33 60.333 807 0C764.17 84 654.8 263.1 560 307.5C465.2 351.9 147.167 356.667 0 353.5C108.667 315.333 360.1 233.2 496.5 210Z" fill="currentColor"></path>
         </svg>
@@ -56,15 +56,15 @@ import tlsBundle from '../images/tls-bundle-thumb.png'
                 <div class="relative isolate grid grid-cols-3 divide-x divide-y divide-dashed border-r border-dashed *:relative *:flex *:h-32 *:items-center *:justify-center *:border-dashed sm:grid-cols-6">
                     <div class="col-span-2 col-start-2 border-l border-t sm:col-span-1 sm:col-start-6">
                         <form class="flex gap-3">
-                            <label class="field btn variant-outlined icon-only sz-sm before:!transition-none has-[:checked]:!bg-primary-600 has-[:checked]:!text-white has-[:checked]:[background-image:none] has-[:checked]:before:!border-white/15 has-[:checked]:before:!bg-primary-600 sm:hidden lg:flex" for="small">
+                            <label class="field btn variant-outlined icon-only sz-sm before:transition-none! has-checked:bg-primary-600! has-checked:text-white! has-checked:[background-image:none] has-checked:before:border-white/15! has-checked:before:bg-primary-600! sm:hidden lg:flex" for="small">
                                 <input type="radio" id="small" name="size" hidden />
                                 <span class="relative">S</span>
                             </label>
-                            <label class="field btn variant-outlined icon-only sz-sm before:!transition-none has-[:checked]:!bg-primary-600 has-[:checked]:!text-white has-[:checked]:[background-image:none] has-[:checked]:before:!border-white/15 has-[:checked]:before:!bg-primary-600" for="medium">
+                            <label class="field btn variant-outlined icon-only sz-sm before:transition-none! has-checked:bg-primary-600! has-checked:text-white! has-checked:[background-image:none] has-checked:before:border-white/15! has-checked:before:bg-primary-600!" for="medium">
                                 <input type="radio" id="medium" checked name="size" hidden />
                                 <span class="relative">M</span>
                             </label>
-                            <label class="field btn variant-outlined icon-only sz-sm before:!transition-none has-[:checked]:!bg-primary-600 has-[:checked]:!text-white has-[:checked]:[background-image:none] has-[:checked]:before:!border-white/15 has-[:checked]:before:!bg-primary-600" for="large">
+                            <label class="field btn variant-outlined icon-only sz-sm before:transition-none! has-checked:bg-primary-600! has-checked:text-white! has-checked:[background-image:none] has-checked:before:border-white/15! has-checked:before:bg-primary-600!" for="large">
                                 <input type="radio" id="large" name="size" hidden />
                                 <span class="relative">L</span>
                             </label>
@@ -95,7 +95,7 @@ import tlsBundle from '../images/tls-bundle-thumb.png'
                     </div>
                     <div class="col-span-2">
                         <div class="field w-full max-w-56">
-                            <input type="email" name="email" class="input variant-mixed sz-md !border !outline-primary-600" placeholder="Your email" />
+                            <input type="email" name="email" class="input variant-mixed sz-md border! outline-primary-600!" placeholder="Your email" />
                         </div>
                     </div>
                 </div>
@@ -106,16 +106,16 @@ import tlsBundle from '../images/tls-bundle-thumb.png'
             <Container>
                 <div class="relative grid divide-x divide-dashed border-x border-dashed sm:grid-cols-2 lg:-mx-4 lg:grid-cols-3 dark:-z-10">
                     <div class="p-3">
-                        <div class="card bg-ui tls-shadow-md ml-auto flex h-full flex-col justify-between shadow-gray-950/[0.035] [--ui-border-color:theme(colors.gray.950/0.05)] dark:[--ui-border-color:theme(colors.gray.800)]">
-                            <div class="mb-6 divide-y divide-dashed border-l [--ui-border-color:theme(colors.gray.950/0.15)] dark:[--ui-border-color:theme(colors.gray.800)]">
+                        <div class="card bg-ui tls-shadow-md ml-auto flex h-full flex-col justify-between shadow-gray-950/[0.035] [--ui-border-color:var(--color-gray-950)]/5 dark:[--ui-border-color:var(--color-gray-800)]">
+                            <div class="mb-6 divide-y divide-dashed border-l [--ui-border-color:var(--color-gray-950)]/15 dark:[--ui-border-color:var(--color-gray-800)]">
                                 <div class="py-2">
-                                    <div class="bg-ui flex h-8 w-2/3 items-center rounded-r-[--btn-radius] border border-l-0 pl-2 text-xs">Jan 2022</div>
+                                    <div class="bg-ui flex h-8 w-2/3 items-center rounded-r-(--btn-radius) border border-l-0 pl-2 text-xs">Jan 2022</div>
                                 </div>
                                 <div class="py-2">
-                                    <div class="flex h-8 w-4/5 items-center rounded-r-[--btn-radius] border border-l-0 border-white/5 bg-primary-600 bg-gradient-to-l from-white/15 to-transparent pl-2 text-xs text-white dark:bg-gray-800">Jun 2022</div>
+                                    <div class="flex h-8 w-4/5 items-center rounded-r-(--btn-radius) border border-l-0 border-white/5 bg-primary-600 bg-linear-to-l from-white/15 to-transparent pl-2 text-xs text-white dark:bg-gray-800">Jun 2022</div>
                                 </div>
                                 <div class="py-2">
-                                    <div class="bg-ui flex h-8 w-1/2 items-center rounded-r-[--btn-radius] border border-l-0 pl-2 text-xs">Aug 2022</div>
+                                    <div class="bg-ui flex h-8 w-1/2 items-center rounded-r-(--btn-radius) border border-l-0 pl-2 text-xs">Aug 2022</div>
                                 </div>
                             </div>
                             <div>
@@ -125,12 +125,12 @@ import tlsBundle from '../images/tls-bundle-thumb.png'
                         </div>
                     </div>
                     <div class="hidden p-3 sm:block">
-                        <div class="card bg-ui tls-shadow-md h-full shadow-gray-950/[0.035] [--ui-border-color:theme(colors.gray.950/0.05)] dark:[--ui-border-color:theme(colors.gray.800)]">
+                        <div class="card bg-ui tls-shadow-md h-full shadow-gray-950/[0.035] [--ui-border-color:var(--color-gray-950)]/5 dark:[--ui-border-color:var(--color-gray-800)]">
                             <span class="text-caption text-xs">Great UX</span>
                             <div class="text-title mt-2 text-sm font-medium">Realtime insights</div>
                             <p class="mt-3 text-sm">Provident fugit vero voluptate. dolores voluptates inventore nisi.</p>
 
-                            <div class="card variant-outlined mt-12 space-y-3 p-4 [--ui-border-color:theme(colors.gray.950/0.15)] dark:[--ui-border-color:theme(colors.gray.800)]">
+                            <div class="card variant-outlined mt-12 space-y-3 p-4 [--ui-border-color:var(--color-gray-950)]/15 dark:[--ui-border-color:var(--color-gray-800)]">
                                 <div class="flex justify-between">
                                     <div class="text-title flex items-center gap-1.5">
                                         <svg class="size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M2 19v-6q0-.675.275-1.225T3 10.8V8q0-1.25.875-2.125T6 5h4q.575 0 1.075.213T12 5.8q.425-.375.925-.587T14 5h4q1.25 0 2.125.875T21 8v2.8q.45.425.725.975T22 13v6h-2v-2H4v2zm11-9h6V8q0-.425-.288-.712T18 7h-4q-.425 0-.712.288T13 8zm-8 0h6V8q0-.425-.288-.712T10 7H6q-.425 0-.712.288T5 8z"></path></svg>
@@ -153,22 +153,22 @@ import tlsBundle from '../images/tls-bundle-thumb.png'
                                         </div>
                                     </div>
                                     <div class="flex items-end gap-1">
-                                        <div aria-hidden="true" class="h-3 w-1.5 rounded bg-gray-950/10 dark:bg-white/10"></div>
-                                        <div aria-hidden="true" class="h-5 w-1.5 rounded bg-gray-950/10 dark:bg-white/10"></div>
-                                        <div aria-hidden="true" class="h-10 w-1.5 rounded bg-gray-950/10 dark:bg-white/10"></div>
-                                        <div aria-hidden="true" class="h-4 w-1.5 rounded bg-gray-950/10 dark:bg-white/10"></div>
-                                        <div aria-hidden="true" class="h-6 w-1.5 rounded bg-gray-950/10 dark:bg-white/10"></div>
-                                        <div aria-hidden="true" class="h-5 w-1.5 rounded bg-gray-950/10 dark:bg-white/10"></div>
-                                        <div aria-hidden="true" class="h-9 w-1.5 rounded bg-gradient-to-b from-primary-300 to-primary-500"></div>
+                                        <div aria-hidden="true" class="h-3 w-1.5 rounded-xs bg-gray-950/10 dark:bg-white/10"></div>
+                                        <div aria-hidden="true" class="h-5 w-1.5 rounded-xs bg-gray-950/10 dark:bg-white/10"></div>
+                                        <div aria-hidden="true" class="h-10 w-1.5 rounded-xs bg-gray-950/10 dark:bg-white/10"></div>
+                                        <div aria-hidden="true" class="h-4 w-1.5 rounded-xs bg-gray-950/10 dark:bg-white/10"></div>
+                                        <div aria-hidden="true" class="h-6 w-1.5 rounded-xs bg-gray-950/10 dark:bg-white/10"></div>
+                                        <div aria-hidden="true" class="h-5 w-1.5 rounded-xs bg-gray-950/10 dark:bg-white/10"></div>
+                                        <div aria-hidden="true" class="h-9 w-1.5 rounded-xs bg-linear-to-b from-primary-300 to-primary-500"></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="hidden p-3 lg:block">
-                        <div class="card bg-ui tls-shadow-md ml-auto h-full shadow-gray-950/[0.035] [--ui-border-color:theme(colors.gray.950/0.05)] dark:[--ui-border-color:theme(colors.gray.800)]">
-                            <div class="relative mb-6 mt-6 [--ui-bg:theme(colors.white)] [--ui-border-color:theme(colors.gray.950/0.15)] dark:[--ui-bg:theme(colors.gray.800)] dark:[--ui-border-color:theme(colors.gray.800)]">
-                                <div class="card variant-mixed absolute inset-0 bottom-auto top-8 z-10 m-auto grid items-center gap-2 p-4 [grid-template-columns:auto_1fr] dark:!shadow-xl dark:shadow-gray-950/50">
+                        <div class="card bg-ui tls-shadow-md ml-auto h-full shadow-gray-950/[0.035] [--ui-border-color:var(--color-gray-950)]/5 dark:[--ui-border-color:var(--color-gray-800)]">
+                            <div class="relative mb-6 mt-6 [--ui-bg:var(--color-white)] [--ui-border-color:var(--color-gray-950)]/15 dark:[--ui-bg:var(--color-gray-800)] dark:[--ui-border-color:var(--color-gray-800)]">
+                                <div class="card variant-mixed absolute inset-0 bottom-auto top-8 z-10 m-auto grid items-center gap-2 p-4 [grid-template-columns:auto_1fr] dark:shadow-xl! dark:shadow-gray-950/50">
                                     <div class="avatar sz-sm">
                                         <img src={THEO_AVATAR} alt="Théo Balick" width="120" height="120" loading="lazy" />
                                     </div>
@@ -218,19 +218,19 @@ import tlsBundle from '../images/tls-bundle-thumb.png'
                         </div>
                     </div>
                     <div class="p-3 sm:col-span-2 lg:col-span-4">
-                        <div class="card bg-ui tls-shadow-md w-full overflow-auto shadow-gray-950/[0.035] [--ui-border-color:theme(colors.gray.950/0.05)] lg:overflow-clip dark:[--ui-border-color:theme(colors.gray.800)]">
+                        <div class="card bg-ui tls-shadow-md w-full overflow-auto shadow-gray-950/[0.035] [--ui-border-color:var(--color-gray-950)]/5 lg:overflow-clip dark:[--ui-border-color:var(--color-gray-800)]">
                             <div class="mb-6">
                                 <div class="text-title font-medium">Customers</div>
                                 <p class="mt-1 text-sm">New users by First user primary channel group (Default Channel Group)</p>
                             </div>
-                            <table class="-mb-4 w-max table-auto border-collapse [--ui-border-color:theme(colors.gray.950/0.05)] lg:w-full dark:[--ui-border-color:theme(colors.gray.700/0.25)] dark:[--ui-soft-bg:var(--ui-bg)]" data-rounded="medium">
+                            <table class="-mb-4 w-max table-auto border-collapse [--ui-border-color:var(--color-gray-950)]/5 lg:w-full dark:[--ui-border-color:var(--color-gray-700)]/25 dark:[--ui-soft-bg:var(--ui-bg)]" data-rounded="medium">
                                 <thead class="text-title sticky top-0 bg-gray-950/5 dark:bg-gray-925">
                                     <tr class="*:p-3 *:text-left *:text-sm *:font-medium">
-                                        <th class="rounded-l-[--card-radius]">#</th>
+                                        <th class="rounded-l-(--card-radius)">#</th>
                                         <th>Date</th>
                                         <th>Status</th>
                                         <th>Customer</th>
-                                        <th class="rounded-r-[--card-radius]">Revenue</th>
+                                        <th class="rounded-r-(--card-radius)">Revenue</th>
                                     </tr>
                                 </thead>
                                 <tbody class="text-sm">
@@ -321,7 +321,7 @@ import tlsBundle from '../images/tls-bundle-thumb.png'
             </div>
         </Container>
         <div class="relative mt-12 pb-16 md:mt-16 md:pb-20">
-            <div class="absolute inset-x-0 bottom-0 top-10 border-t bg-gradient-to-b from-gray-50 to-gray-100 shadow-inner shadow-gray-500/5 dark:from-gray-950 dark:to-gray-950"></div>
+            <div class="absolute inset-x-0 bottom-0 top-10 border-t bg-linear-to-b from-gray-50 to-gray-100 shadow-inner shadow-gray-500/5 dark:from-gray-950 dark:to-gray-950"></div>
             <Container>
                 <div class="lg:-mx-4">
                     <CodeComparason client:idle />

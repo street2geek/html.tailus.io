@@ -35,8 +35,8 @@ const htmlCode = `<section class="overflow-hidden py-32">
             </div>
             <div class="relative mt-6 sm:mt-0">
                 <div class="absolute -inset-20 bg-[linear-gradient(to_right,var(--ui-border-color)_1px,transparent_1px),linear-gradient(to_bottom,var(--ui-border-color)_1px,transparent_1px)] bg-[size:24px_24px] sm:-inset-40"></div>
-                <div class="absolute -inset-20 bg-gradient-to-b from-gray-50 via-transparent to-gray-50 sm:-inset-40 dark:from-gray-950 dark:via-transparent dark:to-gray-950"></div>
-                <div class="absolute -inset-20 bg-gradient-to-r from-gray-50 via-transparent to-gray-50 sm:-inset-40 dark:from-gray-950 dark:via-transparent dark:to-gray-950"></div>
+                <div class="absolute -inset-20 bg-linear-to-b from-gray-50 via-transparent to-gray-50 sm:-inset-40 dark:from-gray-950 dark:via-transparent dark:to-gray-950"></div>
+                <div class="absolute -inset-20 bg-linear-to-r from-gray-50 via-transparent to-gray-50 sm:-inset-40 dark:from-gray-950 dark:via-transparent dark:to-gray-950"></div>
                 <div class="tls-shadow-md rounded-card relative overflow-hidden shadow-gray-950/[0.03]">
                     <img class="relative dark:hidden" src="/blocks/traf.png" alt="" />
                     <img class="relative hidden grayscale dark:block" src="/blocks/traf-dark.png" alt="" />
@@ -83,8 +83,8 @@ const nextjsCode = `export default function ContentSection(){
                     </div>
                     <div className="relative mt-6 sm:mt-0">
                         <div className="absolute -inset-20 bg-[linear-gradient(to_right,var(--ui-border-color)_1px,transparent_1px),linear-gradient(to_bottom,var(--ui-border-color)_1px,transparent_1px)] bg-[size:24px_24px] sm:-inset-40"></div>
-                        <div className="absolute -inset-20 bg-gradient-to-b from-gray-50 via-transparent to-gray-50 sm:-inset-40 dark:from-gray-950 dark:via-transparent dark:to-gray-950"></div>
-                        <div className="absolute -inset-20 bg-gradient-to-r from-gray-50 via-transparent to-gray-50 sm:-inset-40 dark:from-gray-950 dark:via-transparent dark:to-gray-950"></div>
+                        <div className="absolute -inset-20 bg-linear-to-b from-gray-50 via-transparent to-gray-50 sm:-inset-40 dark:from-gray-950 dark:via-transparent dark:to-gray-950"></div>
+                        <div className="absolute -inset-20 bg-linear-to-r from-gray-50 via-transparent to-gray-50 sm:-inset-40 dark:from-gray-950 dark:via-transparent dark:to-gray-950"></div>
                         <div className="tls-shadow-md rounded-card relative overflow-hidden shadow-gray-950/[0.03]">
                             <img className="relative dark:hidden" src="/blocks/traf.png" alt="" />
                             <img className="relative hidden grayscale dark:block" src="/blocks/traf-dark.png" alt="" />

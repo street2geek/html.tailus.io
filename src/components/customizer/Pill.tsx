@@ -14,7 +14,7 @@ import { useStore } from '@nanostores/react'
 import { isOpen, setIsOpen } from '@store/customizer'
 import SeparatorRoot from '@components/tailus-ui/Separator'
 
-export type TabsAppProps = 'palette' | 'shade' | 'rounded'
+export type TabsAppProps = 'palette' | 'shade' | 'rounded-xs'
 
 export const CustomizerPill = () => {
     const palette = useStore($palette)
@@ -61,7 +61,7 @@ export const CustomizerPill = () => {
                             Make it entirely yours
                         </Text>
 
-                        <Tabs.Root defaultValue={state} onValueChange={(value) => setState(value as TabsAppProps)} className="text-[--title-text-color]" data-shade="800">
+                        <Tabs.Root defaultValue={state} onValueChange={(value) => setState(value as TabsAppProps)} className="text-(--title-text-color)" data-shade="800">
                             <Tabs.List className="relative -mx-3.5 mb-5 flex h-9 p-1 ">
                                 <motion.span
                                     animate={{
@@ -69,7 +69,7 @@ export const CustomizerPill = () => {
                                         width: spanWidth,
                                         transition: { type: 'spring', bounce: 0.2, duration: 0.5 },
                                     }}
-                                    className="absolute inset-y-1 -z-[1] block rounded-full border border-gray-950/5 bg-gray-100 dark:border-white/5 dark:bg-gray-500/25"
+                                    className="absolute inset-y-1 -z-1 block rounded-full border border-gray-950/5 bg-gray-100 dark:border-white/5 dark:bg-gray-500/25"
                                     ref={spanRef}
                                 />
                                 <Tabs.Trigger value="palette" id="palette" className="flex h-full items-center gap-2 px-2.5 text-sm duration-200 data-[state=inactive]:opacity-50">
@@ -80,7 +80,7 @@ export const CustomizerPill = () => {
                                     <Layers2 className="size-4" />
                                     <span>Shade</span>
                                 </Tabs.Trigger>
-                                <Tabs.Trigger value="rounded" id="rounded" className="flex h-full items-center gap-2 px-2.5 text-sm duration-200 data-[state=inactive]:opacity-50">
+                                <Tabs.Trigger value="rounded-xs" id="rounded-xs" className="flex h-full items-center gap-2 px-2.5 text-sm duration-200 data-[state=inactive]:opacity-50">
                                     <Square className="size-4" />
                                     <span>Rounded</span>
                                 </Tabs.Trigger>
@@ -91,7 +91,7 @@ export const CustomizerPill = () => {
                             <Tabs.Content value="shade">
                                 <ShadeSwitcher />
                             </Tabs.Content>
-                            <Tabs.Content value="rounded">
+                            <Tabs.Content value="rounded-xs">
                                 <RoundedSwitcher />
                             </Tabs.Content>
                         </Tabs.Root>

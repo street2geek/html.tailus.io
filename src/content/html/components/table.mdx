@@ -19,7 +19,7 @@ export const components = {
               [{
             code:`<table class="border-collapse table-auto border max-w-sm w-full">
     <thead class="text-title">
-        <tr class="*:font-medium bg-ui-soft dark:bg-[--ui-bg] *:border *:px-3 *:py-2 *:text-left">
+        <tr class="*:font-medium bg-ui-soft dark:bg-(--ui-bg) *:border *:px-3 *:py-2 *:text-left">
             <th>#</th>
             <th>First</th>
             <th>Last</th>
@@ -51,7 +51,7 @@ export const components = {
           }]}>
         <table class="border-collapse table-auto border max-w-sm w-full">
             <thead class="text-title">
-                <tr class="*:font-medium bg-ui-soft dark:bg-[--ui-bg] *:border *:px-3 *:py-2 *:text-left">
+                <tr class="*:font-medium bg-ui-soft dark:bg-(--ui-bg) *:border *:px-3 *:py-2 *:text-left">
                     <th>#</th>
                     <th>First</th>
                     <th>Last</th>
@@ -95,7 +95,7 @@ export const components = {
                     <span>Free</span>
                     <a href="#" class="btn variant-soft intent-gray sz-xs w-fit">Get Started </a>
                 </th>
-                <th class="space-y-2 px-4 bg-ui-soft rounded-t-[--card-radius]">
+                <th class="space-y-2 px-4 bg-ui-soft rounded-t-(--card-radius)">
                     <span>Pro</span>
                     <a href="#" class="btn variant-solid intent-primary sz-xs w-fit">Get Started </a>
                 </th>
@@ -201,7 +201,7 @@ export const components = {
             <tr class="*:py-4 *:text-sm">
                 <td></td>
                 <td></td>
-                <td class="bg-ui-soft border-none rounded-b-[--card-radius]"></td>
+                <td class="bg-ui-soft border-none rounded-b-(--card-radius)"></td>
                 <td></td>
             </tr>
         </tbody>
@@ -218,7 +218,7 @@ export const components = {
                                 <span>Free</span>
                                 <a href="#" class="btn variant-soft intent-gray sz-xs w-fit">Get Started </a>
                             </th>
-                            <th class="space-y-2 px-4 bg-ui-soft rounded-t-[--card-radius]">
+                            <th class="space-y-2 px-4 bg-ui-soft rounded-t-(--card-radius)">
                                 <span>Pro</span>
                                 <a href="#" class="btn variant-primary sz-xs w-fit">Get Started </a>
                             </th>
@@ -324,7 +324,7 @@ export const components = {
                         <tr class="*:py-4 *:text-sm">
                             <td></td>
                             <td></td>
-                            <td class="bg-ui-soft border-none rounded-b-[--card-radius]"></td>
+                            <td class="bg-ui-soft border-none rounded-b-(--card-radius)"></td>
                             <td></td>
                         </tr>
                     </tbody>
@@ -346,12 +346,12 @@ export const components = {
     <table class="border-collapse table-auto w-max dark:[--ui-soft-bg:var(--ui-bg)]" data-rounded="medium">
         <thead class="text-title sticky top-0 bg-ui-soft dark:bg-gray-925">
             <tr class="*:font-medium *:text-sm *:p-3 *:text-left">
-                <th class="rounded-l-[--card-radius]">#</th>
+                <th class="rounded-l-(--card-radius)">#</th>
                 <th>Date</th>
                 <th>Status</th>
                 <th>Customer</th>
                 <th>Product</th>
-                <th class="rounded-r-[--card-radius]">Revenue</th>
+                <th class="rounded-r-(--card-radius)">Revenue</th>
             </tr>
         </thead>
         <tbody class="text-sm">
@@ -428,12 +428,12 @@ export const components = {
                 <table class="border-collapse table-auto w-max dark:[--ui-soft-bg:var(--ui-bg)]" data-rounded="medium">
                     <thead class="text-title sticky top-0 bg-ui-soft dark:bg-gray-925">
                         <tr class="*:font-medium *:text-sm *:p-3 *:text-left">
-                            <th class="rounded-l-[--card-radius]">#</th>
+                            <th class="rounded-l-(--card-radius)">#</th>
                             <th>Date</th>
                             <th>Status</th>
                             <th>Customer</th>
                             <th>Product</th>
-                            <th class="rounded-r-[--card-radius]">Revenue</th>
+                            <th class="rounded-r-(--card-radius)">Revenue</th>
                         </tr>
                     </thead>
                     <tbody class="text-sm">
@@ -516,16 +516,16 @@ export const components = {
     <table class="border-collapse table-auto w-max dark:[--ui-soft-bg:var(--ui-bg)]" data-rounded="medium">
         <thead class="text-title sticky top-0 bg-ui-soft dark:bg-gray-925">
             <tr class="*:font-medium *:text-sm *:p-3 *:text-left">
-                <th class="rounded-l-[--card-radius]">#</th>
+                <th class="rounded-l-(--card-radius)">#</th>
                 <th>Date</th>
                 <th>Status</th>
                 <th>Customer</th>
                 <th>Product</th>
-                <th class="rounded-r-[--card-radius]">Revenue</th>
+                <th class="rounded-r-(--card-radius)">Revenue</th>
             </tr>
         </thead>
-        <tbody class="text-sm pt-1 [--ui-soft-bg:theme(colors.gray.50)] dark:[--ui-soft-bg:theme(colors.gray.925)]">
-            <tr class="*:p-3 *:border-b hover:bg-ui-soft has-[:checked]:bg-ui-soft border-l-2 border-transparent has-[:checked]:border-primary-600">
+        <tbody class="text-sm pt-1 [--ui-soft-bg:var(--color-gray-50)] dark:[--ui-soft-bg:var(--color-gray-925)]">
+            <tr class="*:p-3 *:border-b hover:bg-ui-soft has-checked:bg-ui-soft border-l-2 border-transparent has-checked:border-primary-600">
                 <td>
                     <label for="c11" class="checkbox group size-4">
                         <input class="peer" type="checkbox" id="c11" name="checkbox1" />
@@ -545,7 +545,7 @@ export const components = {
                 <td>Ampire Ess</td>
                 <td>$43.99</td>
             </tr>
-            <tr class="*:p-3 *:border-b hover:bg-ui-soft has-[:checked]:bg-ui-soft border-l-2 border-transparent has-[:checked]:border-primary-600">
+            <tr class="*:p-3 *:border-b hover:bg-ui-soft has-checked:bg-ui-soft border-l-2 border-transparent has-checked:border-primary-600">
                 <td>
                     <label for="c12" class="checkbox group size-4">
                         <input class="peer" type="checkbox" id="c12" name="checkbox1" />
@@ -565,7 +565,7 @@ export const components = {
                 <td>Astrolus H</td>
                 <td>$19.99</td>
             </tr>
-            <tr class="*:p-3 *:border-b hover:bg-ui-soft has-[:checked]:bg-ui-soft border-l-2 border-transparent has-[:checked]:border-primary-600">
+            <tr class="*:p-3 *:border-b hover:bg-ui-soft has-checked:bg-ui-soft border-l-2 border-transparent has-checked:border-primary-600">
                 <td>
                     <label for="c13" class="checkbox group size-4">
                         <input class="peer" type="checkbox" id="c13" name="checkbox1" />
@@ -585,7 +585,7 @@ export const components = {
                 <td>Alt Next</td>
                 <td>$59.99</td>
             </tr>
-            <tr class="rounded-card *:p-3 *:border-b hover:bg-ui-soft has-[:checked]:bg-ui-soft border-l-2 border-transparent has-[:checked]:border-primary-600">
+            <tr class="rounded-card *:p-3 *:border-b hover:bg-ui-soft has-checked:bg-ui-soft border-l-2 border-transparent has-checked:border-primary-600">
                 <td>
                     <label for="c14" class="checkbox group size-4">
                         <input class="peer" type="checkbox" id="c14" name="checkbox1" />
@@ -618,7 +618,7 @@ export const components = {
                 <table class="border-collapse table-auto w-max dark:[--ui-soft-bg:var(--ui-bg)]" data-rounded="medium">
                     <thead class="text-title sticky top-0 bg-ui-soft dark:bg-gray-925">
                         <tr class="*:font-medium *:text-sm *:p-3 *:text-left">
-                            <th class="rounded-l-[--card-radius]">
+                            <th class="rounded-l-(--card-radius)">
                                 <label for="c1" class="checkbox group size-4">
                                     <input class="peer" type="checkbox" id="c1" name="checkbox1" />
                                     <svg class="checkbox-icon size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="pointer-events: none;"><path d="M20 6 9 17l-5-5"></path></svg>
@@ -628,11 +628,11 @@ export const components = {
                             <th>Status</th>
                             <th>Customer</th>
                             <th>Product</th>
-                            <th class="rounded-r-[--card-radius]">Revenue</th>
+                            <th class="rounded-r-(--card-radius)">Revenue</th>
                         </tr>
                     </thead>
-                    <tbody class="text-sm pt-1 [--ui-soft-bg:theme(colors.gray.50)] dark:[--ui-soft-bg:theme(colors.gray.925)]">
-                        <tr class="*:p-3 *:border-b hover:bg-ui-soft has-[:checked]:bg-ui-soft border-l-2 border-transparent has-[:checked]:border-primary-600">
+                    <tbody class="text-sm pt-1 [--ui-soft-bg:var(--color-gray-50)] dark:[--ui-soft-bg:var(--color-gray-925)]">
+                        <tr class="*:p-3 *:border-b hover:bg-ui-soft has-checked:bg-ui-soft border-l-2 border-transparent has-checked:border-primary-600">
                             <td>
                                 <label for="c11" class="checkbox group size-4">
                                     <input class="peer" type="checkbox" id="c11" name="checkbox1" />
@@ -652,7 +652,7 @@ export const components = {
                             <td>Ampire Ess</td>
                             <td>$43.99</td>
                         </tr>
-                        <tr class="*:p-3 *:border-b hover:bg-ui-soft has-[:checked]:bg-ui-soft border-l-2 border-transparent has-[:checked]:border-primary-600">
+                        <tr class="*:p-3 *:border-b hover:bg-ui-soft has-checked:bg-ui-soft border-l-2 border-transparent has-checked:border-primary-600">
                             <td>
                                 <label for="c12" class="checkbox group size-4">
                                     <input class="peer" type="checkbox" id="c12" name="checkbox1" />
@@ -672,7 +672,7 @@ export const components = {
                             <td>Astrolus H</td>
                             <td>$19.99</td>
                         </tr>
-                        <tr class="*:p-3 *:border-b hover:bg-ui-soft has-[:checked]:bg-ui-soft border-l-2 border-transparent has-[:checked]:border-primary-600">
+                        <tr class="*:p-3 *:border-b hover:bg-ui-soft has-checked:bg-ui-soft border-l-2 border-transparent has-checked:border-primary-600">
                             <td>
                                 <label for="c13" class="checkbox group size-4">
                                     <input class="peer" type="checkbox" id="c13" name="checkbox1" />
@@ -692,7 +692,7 @@ export const components = {
                             <td>Alt Next</td>
                             <td>$59.99</td>
                         </tr>
-                        <tr class="rounded-card *:p-3 *:border-b hover:bg-ui-soft has-[:checked]:bg-ui-soft border-l-2 border-transparent has-[:checked]:border-primary-600">
+                        <tr class="rounded-card *:p-3 *:border-b hover:bg-ui-soft has-checked:bg-ui-soft border-l-2 border-transparent has-checked:border-primary-600">
                             <td>
                                 <label for="c14" class="checkbox group size-4">
                                     <input class="peer" type="checkbox" id="c14" name="checkbox1" />

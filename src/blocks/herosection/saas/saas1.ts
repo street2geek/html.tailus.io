@@ -1,7 +1,7 @@
 import type { Code } from "src/types";
 
 const htmlCode = `<header>
-    <nav id="navbar" class="fixed group z-20 border-b border-dashed w-full bg-white dark:bg-gray-950/50 backdrop-blur md:relative lg:bg-transparent">
+    <nav id="navbar" class="fixed group z-20 border-b border-dashed w-full bg-white dark:bg-gray-950/50 backdrop-blur-xs md:relative lg:bg-transparent">
         <div class="max-w-5xl m-auto px-6">
             <div class="flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
                 <div class="w-full flex justify-between lg:w-auto">
@@ -69,10 +69,10 @@ const htmlCode = `<header>
 </header>
 <main>
     <section class="overflow-hidden">
-        <svg class="absolute inset-0 z-[2] opacity-25 dark:opacity-100 mx-auto w-full text-secondary-100 blur-3xl dark:text-white/5" viewBox="0 0 807 355" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="absolute inset-0 z-2 opacity-25 dark:opacity-100 mx-auto w-full text-secondary-100 blur-3xl dark:text-white/5" viewBox="0 0 807 355" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M496.5 210C632.9 186.8 760.33 60.333 807 0C764.17 84 654.8 263.1 560 307.5C465.2 351.9 147.167 356.667 0 353.5C108.667 315.333 360.1 233.2 496.5 210Z" fill="currentColor"></path>
         </svg>
-        <svg class="absolute inset-0 z-[2] opacity-25 dark:opacity-100 m-auto w-full text-primary-200 blur-3xl dark:text-primary-500/5" viewBox="0 0 807 355" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="absolute inset-0 z-2 opacity-25 dark:opacity-100 m-auto w-full text-primary-200 blur-3xl dark:text-primary-500/5" viewBox="0 0 807 355" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M496.5 210C632.9 186.8 760.33 60.333 807 0C764.17 84 654.8 263.1 560 307.5C465.2 351.9 147.167 356.667 0 353.5C108.667 315.333 360.1 233.2 496.5 210Z" fill="currentColor"></path>
         </svg>
         <div class="relative max-w-5xl mx-auto px-6 py-28 lg:py-20">
@@ -81,19 +81,19 @@ const htmlCode = `<header>
                     <a href="#" class="annonce variant-mixed gap-2 sz-sm w-fit mx-auto lg:ml-0">
                         <span class="annonce-concern sz-xs variant-neutral">New</span>
                         <span class="text-title text-sm">Introduction Tailus UI Html</span>
-                        <span class="h-4 w-px block bg-[--ui-border-color]"></span>
+                        <span class="h-4 w-px block bg-(--ui-border-color)"></span>
                         <span class="text-primary-600 dark:text-primary-400 text-sm">Read</span>
                     </a>
                     <h1 class="mt-10 text-title font-bold text-balance text-4xl md:text-5xl xl:text-5xl">Production Ready Digital Marketing blocks</h1>
                     <p class="mt-8 text-body">Error totam sit illum. Voluptas doloribus asperiores quaerat aperiam. Quidem harum omnis beatae ipsum soluta!</p>
                     <div>
                         <form action="" class="max-w-sm mx-auto lg:ml-0 lg:mr-auto my-10 lg:my-12">
-                            <div class="relative grid bg-ui [grid-template-columns:1fr_auto] items-center border pr-3 shadow shadow-gray-950/5 rounded-[calc(var(--btn-radius)+0.75rem)] outline-2 outline-offset-2 outline-primary-600 has-[input:focus]:outline">
+                            <div class="relative grid bg-ui [grid-template-columns:1fr_auto] items-center border pr-3 shadow-2xs shadow-gray-950/5 rounded-[calc(var(--btn-radius)+0.75rem)] outline-2 outline-offset-2 outline-primary-600 has-[input:focus]:outline">
                                 <svg class="absolute inset-y-0 left-5 my-auto size-5 pointer-events-none text-caption" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                                 </svg>
 
-                                <input autocomplete="email" placeholder="Your mail address" class="pl-12 h-14 w-full bg-transparent focus:outline-none" type="email">
+                                <input autocomplete="email" placeholder="Your mail address" class="pl-12 h-14 w-full bg-transparent focus:outline-hidden" type="email">
                                 <div class="md:pr-1.5 lg:pr-0">
                                     <button title="Start buying" class="btn w-fit variant-primary sz-md">
                                         <span class="btn-label hidden md:block">
@@ -115,9 +115,9 @@ const htmlCode = `<header>
                 </div>
                 <div class="relative lg:absolute inset-x-0 right-6 mt-12 lg:mt-0 lg:inset-y-16 h-fit mx-auto lg:mr-0 ml-auto max-w-md [--ui-shadow-border:var(--ui-border-color)]">  
                     <img class="rounded-card relative z-10 p-0.5 bg-ui tls-shadow shadow-gray-950/[0.05]" src="/blocks/edit-bar.png" alt="project illustration" height="" width="" loading="lazy">
-                    <div class="absolute -inset-20 sm:-inset-40 z-[1] bg-gradient-to-b from-gray-50 via-transparent to-gray-50 dark:from-gray-950 dark:via-transparent dark:to-gray-950"></div>
-                    <div class="absolute -inset-20 sm:-inset-40 z-[1] bg-gradient-to-r from-gray-50 via-transparent to-gray-50 dark:from-gray-950 dark:via-transparent dark:to-gray-950"></div>
-                    <div data-shade="glassy" class="absolute -inset-20 sm:-inset-40 [--ui-border-color:theme(colors.primary.200)] dark:[--ui-border-color:theme(colors.primary.500/0.25)] bg-[linear-gradient(to_right,var(--ui-border-color)_1px,transparent_1px),linear-gradient(to_bottom,var(--ui-border-color)_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+                    <div class="absolute -inset-20 sm:-inset-40 z-1 bg-linear-to-b from-gray-50 via-transparent to-gray-50 dark:from-gray-950 dark:via-transparent dark:to-gray-950"></div>
+                    <div class="absolute -inset-20 sm:-inset-40 z-1 bg-linear-to-r from-gray-50 via-transparent to-gray-50 dark:from-gray-950 dark:via-transparent dark:to-gray-950"></div>
+                    <div data-shade="glassy" class="absolute -inset-20 sm:-inset-40 [--ui-border-color:var(--color-primary-200)] dark:[--ui-border-color:var(--color-primary-500)]/25 bg-[linear-gradient(to_right,var(--ui-border-color)_1px,transparent_1px),linear-gradient(to_bottom,var(--ui-border-color)_1px,transparent_1px)] bg-[size:24px_24px]"></div>
                     <div class="relative mt-4 z-10 before:absolute before:inset-x-2 before:-bottom-1.5 before:top-0 before:rounded-card before:bg-ui before:tls-shadow-lg before:shadow-gray-950/[0.03]">
                         <div class="relative overflow-hidden tls-shadow shadow-gray-950/[0.05] bg-ui rounded-card">
                             <img src="/blocks/ar.png" alt="project illustration" height="" width="" loading="lazy">
@@ -147,7 +147,7 @@ import toolbar from '/blocks/edit-bar.png'
 ---
 
 <header>
-    <nav id="navbar" class="group fixed z-20 w-full border-b border-dashed bg-white backdrop-blur md:relative lg:bg-transparent dark:bg-gray-950/50">
+    <nav id="navbar" class="group fixed z-20 w-full border-b border-dashed bg-white backdrop-blur-xs md:relative lg:bg-transparent dark:bg-gray-950/50">
         <div class="m-auto max-w-5xl px-6">
             <div class="flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
                 <div class="flex w-full justify-between lg:w-auto">
@@ -215,10 +215,10 @@ import toolbar from '/blocks/edit-bar.png'
 </header>
 <main>
     <section class="overflow-hidden">
-        <svg class="absolute inset-0 z-[2] mx-auto w-full text-secondary-100 opacity-25 blur-3xl dark:text-white/5 dark:opacity-100" viewBox="0 0 807 355" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="absolute inset-0 z-2 mx-auto w-full text-secondary-100 opacity-25 blur-3xl dark:text-white/5 dark:opacity-100" viewBox="0 0 807 355" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M496.5 210C632.9 186.8 760.33 60.333 807 0C764.17 84 654.8 263.1 560 307.5C465.2 351.9 147.167 356.667 0 353.5C108.667 315.333 360.1 233.2 496.5 210Z" fill="currentColor"></path>
         </svg>
-        <svg class="absolute inset-0 z-[2] m-auto w-full text-primary-200 opacity-25 blur-3xl dark:text-primary-500/5 dark:opacity-100" viewBox="0 0 807 355" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="absolute inset-0 z-2 m-auto w-full text-primary-200 opacity-25 blur-3xl dark:text-primary-500/5 dark:opacity-100" viewBox="0 0 807 355" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M496.5 210C632.9 186.8 760.33 60.333 807 0C764.17 84 654.8 263.1 560 307.5C465.2 351.9 147.167 356.667 0 353.5C108.667 315.333 360.1 233.2 496.5 210Z" fill="currentColor"></path>
         </svg>
         <div class="relative mx-auto max-w-5xl px-6 py-28 lg:py-20">
@@ -227,19 +227,19 @@ import toolbar from '/blocks/edit-bar.png'
                     <a href="#" class="annonce variant-mixed sz-sm mx-auto w-fit gap-2 lg:ml-0">
                         <span class="annonce-concern sz-xs variant-neutral">New</span>
                         <span class="text-title text-sm">Introduction Tailus UI Html</span>
-                        <span class="block h-4 w-px bg-[--ui-border-color]"></span>
+                        <span class="block h-4 w-px bg-(--ui-border-color)"></span>
                         <span class="text-sm text-primary-600 dark:text-primary-400">Read</span>
                     </a>
                     <h1 class="text-title mt-10 text-balance text-4xl font-bold md:text-5xl xl:text-5xl">Production Ready Digital Marketing blocks</h1>
                     <p class="text-body mt-8">Error totam sit illum. Voluptas doloribus asperiores quaerat aperiam. Quidem harum omnis beatae ipsum soluta!</p>
                     <div>
                         <form action="" class="mx-auto my-10 max-w-sm lg:my-12 lg:ml-0 lg:mr-auto">
-                            <div class="bg-ui relative grid items-center rounded-[calc(var(--btn-radius)+0.75rem)] border pr-3 shadow shadow-gray-950/5 outline-2 outline-offset-2 outline-primary-600 [grid-template-columns:1fr_auto] has-[input:focus]:outline">
+                            <div class="bg-ui relative grid items-center rounded-[calc(var(--btn-radius)+0.75rem)] border pr-3 shadow-2xs shadow-gray-950/5 outline-2 outline-offset-2 outline-primary-600 [grid-template-columns:1fr_auto] has-[input:focus]:outline">
                                 <svg class="text-caption pointer-events-none absolute inset-y-0 left-5 my-auto size-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"></path>
                                 </svg>
 
-                                <input autocomplete="email" placeholder="Your mail address" class="h-14 w-full bg-transparent pl-12 focus:outline-none" type="email" />
+                                <input autocomplete="email" placeholder="Your mail address" class="h-14 w-full bg-transparent pl-12 focus:outline-hidden" type="email" />
                                 <div class="md:pr-1.5 lg:pr-0">
                                     <button title="Start buying" class="btn variant-primary sz-md w-fit">
                                         <span class="btn-label hidden md:block"> Get Started</span>
@@ -259,9 +259,9 @@ import toolbar from '/blocks/edit-bar.png'
                 </div>
                 <div class="relative inset-x-0 right-6 mx-auto ml-auto mt-12 h-fit max-w-md [--ui-shadow-border:var(--ui-border-color)] lg:absolute lg:inset-y-16 lg:mr-0 lg:mt-0">
                     <Image class="bg-ui tls-shadow rounded-card relative z-10 p-0.5 shadow-gray-950/[0.05]" src={toolbar} alt="project illustration" />
-                    <div class="absolute -inset-20 z-[1] bg-gradient-to-b from-gray-50 via-transparent to-gray-50 sm:-inset-40 dark:from-gray-950 dark:via-transparent dark:to-gray-950"></div>
-                    <div class="absolute -inset-20 z-[1] bg-gradient-to-r from-gray-50 via-transparent to-gray-50 sm:-inset-40 dark:from-gray-950 dark:via-transparent dark:to-gray-950"></div>
-                    <div data-shade="glassy" class="absolute -inset-20 bg-[linear-gradient(to_right,var(--ui-border-color)_1px,transparent_1px),linear-gradient(to_bottom,var(--ui-border-color)_1px,transparent_1px)] bg-[size:24px_24px] [--ui-border-color:theme(colors.primary.200)] sm:-inset-40 dark:[--ui-border-color:theme(colors.primary.500/0.25)]"></div>
+                    <div class="absolute -inset-20 z-1 bg-linear-to-b from-gray-50 via-transparent to-gray-50 sm:-inset-40 dark:from-gray-950 dark:via-transparent dark:to-gray-950"></div>
+                    <div class="absolute -inset-20 z-1 bg-linear-to-r from-gray-50 via-transparent to-gray-50 sm:-inset-40 dark:from-gray-950 dark:via-transparent dark:to-gray-950"></div>
+                    <div data-shade="glassy" class="absolute -inset-20 bg-[linear-gradient(to_right,var(--ui-border-color)_1px,transparent_1px),linear-gradient(to_bottom,var(--ui-border-color)_1px,transparent_1px)] bg-[size:24px_24px] [--ui-border-color:var(--color-primary-200)] sm:-inset-40 dark:[--ui-border-color:var(--color-primary-500)]/25"></div>
                     <div class="before:bg-ui before:tls-shadow-lg relative z-10 mt-4 before:rounded-card before:absolute before:inset-x-2 before:-bottom-1.5 before:top-0 before:shadow-gray-950/[0.03]">
                         <div class="tls-shadow bg-ui rounded-card relative overflow-hidden shadow-gray-950/[0.05]">
                             <Image src={areaChart} alt="project illustration" />
@@ -296,7 +296,7 @@ export default function SaaS1() {
     return (
         <>
             <header>
-                <nav data-state={menuState && 'active'} className="group fixed z-20 w-full border-b border-dashed bg-white backdrop-blur md:relative lg:bg-transparent dark:bg-gray-950/50">
+                <nav data-state={menuState && 'active'} className="group fixed z-20 w-full border-b border-dashed bg-white backdrop-blur-xs md:relative lg:bg-transparent dark:bg-gray-950/50">
                     <div className="m-auto max-w-5xl px-6">
                         <div className="flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
                             <div className="flex w-full justify-between lg:w-auto">
@@ -372,10 +372,10 @@ export default function SaaS1() {
             </header>
             <main>
                 <section className="overflow-hidden">
-                    <svg className="absolute inset-0 z-[2] mx-auto w-full text-purple-100 opacity-25 blur-3xl dark:text-white/5 dark:opacity-100" viewBox="0 0 807 355" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="absolute inset-0 z-2 mx-auto w-full text-purple-100 opacity-25 blur-3xl dark:text-white/5 dark:opacity-100" viewBox="0 0 807 355" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M496.5 210C632.9 186.8 760.33 60.333 807 0C764.17 84 654.8 263.1 560 307.5C465.2 351.9 147.167 356.667 0 353.5C108.667 315.333 360.1 233.2 496.5 210Z" fill="currentColor"></path>
                     </svg>
-                    <svg className="absolute inset-0 z-[2] m-auto w-full text-primary-200 opacity-25 blur-3xl dark:text-primary-500/5 dark:opacity-100" viewBox="0 0 807 355" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="absolute inset-0 z-2 m-auto w-full text-primary-200 opacity-25 blur-3xl dark:text-primary-500/5 dark:opacity-100" viewBox="0 0 807 355" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M496.5 210C632.9 186.8 760.33 60.333 807 0C764.17 84 654.8 263.1 560 307.5C465.2 351.9 147.167 356.667 0 353.5C108.667 315.333 360.1 233.2 496.5 210Z" fill="currentColor"></path>
                     </svg>
                     <div className="relative mx-auto max-w-5xl px-6 py-28 lg:py-20">
@@ -384,19 +384,19 @@ export default function SaaS1() {
                                 <a href="/" className="annonce variant-mixed sz-sm mx-auto w-fit gap-2 lg:ml-0">
                                     <span className="annonce-concern sz-xs variant-neutral">New</span>
                                     <span className="text-title text-sm">Introduction Tailus UI Html</span>
-                                    <span className="block h-4 w-px bg-[--ui-border-color]"></span>
+                                    <span className="block h-4 w-px bg-(--ui-border-color)"></span>
                                     <span className="text-sm text-primary-600 dark:text-primary-400">Read</span>
                                 </a>
                                 <h1 className="text-title mt-10 text-balance text-4xl font-bold md:text-5xl xl:text-5xl">Production Ready Digital Marketing blocks</h1>
                                 <p className="text-body mt-8">Error totam sit illum. Voluptas doloribus asperiores quaerat aperiam. Quidem harum omnis beatae ipsum soluta!</p>
                                 <div>
                                     <form action="" className="mx-auto my-10 max-w-sm lg:my-12 lg:ml-0 lg:mr-auto">
-                                        <div className="bg-ui relative grid items-center rounded-[calc(var(--btn-radius)+0.75rem)] border pr-3 shadow shadow-gray-950/5 outline-2 outline-offset-2 outline-primary-600 [grid-template-columns:1fr_auto] has-[input:focus]:outline">
+                                        <div className="bg-ui relative grid items-center rounded-[calc(var(--btn-radius)+0.75rem)] border pr-3 shadow-2xs shadow-gray-950/5 outline-2 outline-offset-2 outline-primary-600 [grid-template-columns:1fr_auto] has-[input:focus]:outline">
                                             <svg className="text-caption pointer-events-none absolute inset-y-0 left-5 my-auto size-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                                             </svg>
 
-                                            <input placeholder="Your mail address" className="h-14 w-full bg-transparent pl-12 focus:outline-none" type="email" />
+                                            <input placeholder="Your mail address" className="h-14 w-full bg-transparent pl-12 focus:outline-hidden" type="email" />
                                             <div className="md:pr-1.5 lg:pr-0">
                                                 <button title="Start buying" className="btn variant-primary sz-md w-fit">
                                                     <span className="btn-label hidden md:block">Get Started</span>
@@ -416,9 +416,9 @@ export default function SaaS1() {
                             </div>
                             <div className="relative inset-x-0 right-6 mx-auto ml-auto mt-12 h-fit max-w-md [--ui-shadow-border:var(--ui-border-color)] lg:absolute lg:inset-y-16 lg:mr-0 lg:mt-0">
                                 <Image src={toolbar} className="bg-ui tls-shadow rounded-card relative z-10 p-0.5 shadow-gray-950/[0.05]" alt="project illustration" />
-                                <div className="absolute -inset-20 z-[1] bg-gradient-to-b from-gray-50 via-transparent to-gray-50 sm:-inset-40 dark:from-gray-950 dark:via-transparent dark:to-gray-950"></div>
-                                <div className="absolute -inset-20 z-[1] bg-gradient-to-r from-gray-50 via-transparent to-gray-50 sm:-inset-40 dark:from-gray-950 dark:via-transparent dark:to-gray-950"></div>
-                                <div data-shade="glassy" className="absolute -inset-20 bg-[linear-gradient(to_right,var(--ui-border-color)_1px,transparent_1px),linear-gradient(to_bottom,var(--ui-border-color)_1px,transparent_1px)] bg-[size:24px_24px] [--ui-border-color:theme(colors.primary.200)] sm:-inset-40 dark:[--ui-border-color:theme(colors.primary.500/0.25)]"></div>
+                                <div className="absolute -inset-20 z-1 bg-linear-to-b from-gray-50 via-transparent to-gray-50 sm:-inset-40 dark:from-gray-950 dark:via-transparent dark:to-gray-950"></div>
+                                <div className="absolute -inset-20 z-1 bg-linear-to-r from-gray-50 via-transparent to-gray-50 sm:-inset-40 dark:from-gray-950 dark:via-transparent dark:to-gray-950"></div>
+                                <div data-shade="glassy" className="absolute -inset-20 bg-[linear-gradient(to_right,var(--ui-border-color)_1px,transparent_1px),linear-gradient(to_bottom,var(--ui-border-color)_1px,transparent_1px)] bg-[size:24px_24px] [--ui-border-color:var(--color-primary-200)] sm:-inset-40 dark:[--ui-border-color:var(--color-primary-500)]/25"></div>
                                 <div className="before:bg-ui before:tls-shadow-lg relative z-10 mt-4 before:rounded-card before:absolute before:inset-x-2 before:-bottom-1.5 before:top-0 before:shadow-gray-950/[0.03]">
                                     <div className="tls-shadow bg-ui rounded-card relative overflow-hidden shadow-gray-950/[0.05]">
                                         <Image src={areaChart} alt="project illustration" />

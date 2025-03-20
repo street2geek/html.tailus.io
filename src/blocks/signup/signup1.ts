@@ -50,7 +50,7 @@ const htmlCode = `<section class="flex min-h-screen">
             </div>
         </div>
 
-        <div data-shade="925" class="card variant-soft rounded-[calc(var(--card-radius)-4px)] dark:!bg-[--ui-bg]">
+        <div data-shade="925" class="card variant-soft rounded-[calc(var(--card-radius)-4px)] dark:bg-(--ui-bg)!">
             <p class="text-center text-sm">
                 Already have an account ?
                 <a href="#" class="link intent-neutral variant-underlined">Login</a>
@@ -117,7 +117,7 @@ export default function LoginPage(){
                     </div>
                 </div>
 
-                <div data-shade="925" className="card variant-soft rounded-[calc(var(--card-radius)-4px)] dark:!bg-[--ui-bg]">
+                <div data-shade="925" className="card variant-soft rounded-[calc(var(--card-radius)-4px)] dark:bg-(--ui-bg)!">
                     <p className="text-center text-sm">
                         Already have an account ?
                         <Link href="#" className="link intent-neutral variant-underlined">Login</Link>
@@ -180,7 +180,7 @@ const nuxtjsCode = `<template>
                 </div>
             </div>
 
-            <div data-shade="925" class="card variant-soft rounded-[calc(var(--card-radius)-4px)] dark:!bg-[--ui-bg]">
+            <div data-shade="925" class="card variant-soft rounded-[calc(var(--card-radius)-4px)] dark:bg-(--ui-bg)!">
                 <p class="text-center text-sm">
                     Already have an account ?
                     <a href="#" class="link intent-neutral variant-underlined">Login</a>

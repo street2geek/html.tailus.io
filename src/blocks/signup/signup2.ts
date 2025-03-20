@@ -183,7 +183,7 @@ const nuxtjsCode = `<template>
                 </div>
             </div>
 
-            <div data-shade="925" class="card variant-soft rounded-[calc(var(--card-radius)-4px)] dark:!bg-[--ui-bg]">
+            <div data-shade="925" class="card variant-soft rounded-[calc(var(--card-radius)-4px)] dark:bg-(--ui-bg)!">
                 <p class="text-center text-sm">
                     Don't have an account ?
                     <a href="#" class="link intent-neutral variant-underlined"> Create account</a>

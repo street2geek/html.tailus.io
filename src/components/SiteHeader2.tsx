@@ -84,7 +84,7 @@ export function SiteHeader() {
                         </Tooltip.Provider>
 
                         <Button.Root onClick={handleThemeToggle} variant="ghost" intent="gray" aria-label="Code Source" className="relative">
-                            <Button.Icon type="only" className="absolute inset-0 m-auto -rotate-180 scale-[2] opacity-0 transition duration-500 group-active:scale-90 dark:rotate-0 dark:scale-100 dark:opacity-100">
+                            <Button.Icon type="only" className="absolute inset-0 m-auto -rotate-180 scale-2 opacity-0 transition duration-500 group-active:scale-90 dark:rotate-0 dark:scale-100 dark:opacity-100">
                                 <Sun />
                             </Button.Icon>
 

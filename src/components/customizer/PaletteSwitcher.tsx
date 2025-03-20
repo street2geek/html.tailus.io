@@ -28,7 +28,7 @@ export const PaletteSwitcher = ({global=true}:{global?:boolean}) => {
                 {palettes.map((palette, index) => (
                     <motion.div variants={item} key={index}>
                         <RadioGroup.Item value={palette} className="relative flex size-6 overflow-hidden rounded-full border border-gray-950/5 bg-primary-600 outline-2 outline-offset-2 outline-primary-600 focus-visible:outline dark:border-white/25" data-palette={palette}>
-                            <RadioGroup.Indicator className="absolute inset-0 z-[1] m-auto size-2 rounded-full bg-white shadow-md shadow-gray-950/50" />
+                            <RadioGroup.Indicator className="absolute inset-0 z-1 m-auto size-2 rounded-full bg-white shadow-md shadow-gray-950/50" />
                             <div className="col-start-2 ml-auto h-full w-1/2 blur-[6px]">
                                 <div className="h-1/2 bg-secondary-500"></div>
                                 <div className="h-1/2 bg-accent-400"></div>

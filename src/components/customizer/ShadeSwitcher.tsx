@@ -40,8 +40,8 @@ export const ShadeSwitcher = ({ global }: { global?: boolean }) => {
             <RadioGroup.Root aria-label="Theme shades" className="grid w-fit grid-cols-5 gap-3" defaultValue={shade} onValueChange={handleValueChange}>
                 {shades.map((shade, index) => (
                     <motion.div key={index}>
-                        <RadioGroup.Item value={shade} className="relative flex size-6 overflow-hidden rounded-full border bg-[--ui-soft-bg] outline-2 outline-offset-2 outline-primary-600 dark:feedback-bg focus-visible:outline dark:border-white/15" data-tls-shade={shade}>
-                            <RadioGroup.Indicator className="absolute inset-0 z-[1] m-auto size-2 rounded-full bg-gray-950 shadow-md shadow-gray-950/50 dark:bg-white" />
+                        <RadioGroup.Item value={shade} className="relative flex size-6 overflow-hidden rounded-full border bg-(--ui-soft-bg) outline-2 outline-offset-2 outline-primary-600 dark:feedback-bg focus-visible:outline dark:border-white/15" data-tls-shade={shade}>
+                            <RadioGroup.Indicator className="absolute inset-0 z-1 m-auto size-2 rounded-full bg-gray-950 shadow-md shadow-gray-950/50 dark:bg-white" />
                         </RadioGroup.Item>
                     </motion.div>
                 ))}
@@ -106,7 +106,7 @@ export const SelectItem = ({ value, children }: { value: string; children: React
         <Select.Item value={value}>
             <Select.ItemText>
                 <div className="flex items-center gap-2 capitalize">
-                    <div data-shade={value} className="feedback-bg size-4 overflow-hidden rounded-[--card-radius] border" />
+                    <div data-shade={value} className="feedback-bg size-4 overflow-hidden rounded-(--card-radius) border" />
                     {children}
                 </div>
             </Select.ItemText>

@@ -91,8 +91,8 @@ const { asThemer = false, sticky = false } = Astro.props
                 <Button.Root id="mobile-navitems-trigger" data-state="closed" variant="ghost" intent="gray" size="md" aria-label="Toggle navlinks" className="group relative -mr-2.5 flex size-9 flex-col transition duration-200 hover:bg-transparent lg:hidden dark:hover:bg-transparent">
                     <Button.Icon type="only">
                         <div class="absolute inset-0 m-auto transition-transform duration-300 group-data-[state=open]:-translate-x-px group-data-[state=open]:translate-y-0.5 group-data-[state=open]:rotate-45">
-                            <div aria-hidden="true" class="absolute inset-x-0 top-0 mx-auto h-[1.5px] w-[1.125rem] translate-y-[13.5px] rounded bg-gray-950 transition-transform duration-200 group-data-[state=open]:translate-y-4 dark:bg-white"></div>
-                            <div aria-hidden="true" class="absolute inset-x-0 top-0 mx-auto h-[1.5px] w-[1.125rem] translate-y-[21.5px] rounded bg-gray-950 transition-transform duration-200 group-data-[state=open]:translate-y-4 group-data-[state=open]:rotate-90 dark:bg-white"></div>
+                            <div aria-hidden="true" class="absolute inset-x-0 top-0 mx-auto h-[1.5px] w-[1.125rem] translate-y-[13.5px] rounded-xs bg-gray-950 transition-transform duration-200 group-data-[state=open]:translate-y-4 dark:bg-white"></div>
+                            <div aria-hidden="true" class="absolute inset-x-0 top-0 mx-auto h-[1.5px] w-[1.125rem] translate-y-[21.5px] rounded-xs bg-gray-950 transition-transform duration-200 group-data-[state=open]:translate-y-4 group-data-[state=open]:rotate-90 dark:bg-white"></div>
                         </div>
                     </Button.Icon>
                 </Button.Root>
@@ -102,7 +102,7 @@ const { asThemer = false, sticky = false } = Astro.props
 
     {
         !sticky && (
-            <div class="relative z-[55] flex h-10 w-full justify-between border-t px-4 sm:px-2 lg:hidden dark:border-gray-500/20">
+            <div class="relative z-55 flex h-10 w-full justify-between border-t px-4 sm:px-2 lg:hidden dark:border-gray-500/20">
                 <button id="menu-list-trigger" class="group flex h-full items-center gap-1.5 px-4 text-sm text-gray-700 sm:px-6 dark:text-gray-300">
                     <MenuListIcon />
                     Menu

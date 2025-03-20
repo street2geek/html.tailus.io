@@ -1,60 +1,80 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-.pagefind-ui__form{
-    @apply relative w-full before:pointer-events-none before:w-5 before:h-5 before:flex before:absolute before:top-5 dark:before:opacity-75 before:left-[1.35rem] before:bg-[url(/searchIcon.svg)] dark:before:bg-[url(/searchIconDark.svg)]
-}
-.pagefind-ui__search-clear {
-    @apply hidden
-}
-.pagefind-ui__drawer{
-    @apply relative max-h-[32rem] overflow-y-scroll before:fixed before:inset-x-0 bottom-0 before:h-0.5 before:border-b dark:before:border-gray-700/80 dark:before:bg-gray-950
-}
-.pagefind-ui__search-input{
-    @apply text-lg py-4 px-[--card-padding] pl-[3.25rem] top-1 z-10 w-full text-gray-700 placeholder-[--caption-text-color] outline-none dark:text-white bg-transparent;
-}
+@config "./../../tailwind.config.ts";
 
-.pagefind-ui__result-excerpt{
-    @apply text-[--body-text-color] text-sm
-}
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
 
-.pagefind-ui__message{
-    @apply px-[--card-padding] my-3 text-[--body-text-color]
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--ui-border-color);
+  }
 }
 
-.pagefind-ui__results-area{
-    @apply relative p-1
-}
+@layer utilities {
+  .pagefind-ui__form {
+    @apply relative w-full before:pointer-events-none before:absolute before:left-[1.35rem] before:top-5 before:flex before:h-5 before:w-5 before:bg-[url(/searchIcon.svg)] dark:before:bg-[url(/searchIconDark.svg)] dark:before:opacity-75;
+  }
+  .pagefind-ui__search-clear {
+    @apply hidden;
+  }
+  .pagefind-ui__drawer {
+    @apply relative bottom-0 max-h-[32rem] overflow-y-scroll before:fixed before:inset-x-0 before:h-0.5 before:border-b dark:before:border-gray-700/80 dark:before:bg-gray-950;
+  }
+  .pagefind-ui__search-input {
+    @apply top-1 z-10 w-full bg-transparent px-(--card-padding) py-4 pl-[3.25rem] text-lg text-gray-700 placeholder-(--caption-text-color) outline-hidden dark:text-white;
+  }
 
-.pagefind-ui__result-title{
-    @apply text-[--title-text-color] relative flex gap-[0.75rem] items-center text-[15px] before:size-5 before:inset-0 before:inline-block before:bg-[url("/docsIcon.svg")] dark:before:bg-[url("/docsDarkIcon.svg")] dark:before:opacity-75
-}
+  .pagefind-ui__result-excerpt {
+    @apply text-sm text-(--body-text-color);
+  }
 
-.pagefind-ui__results{
-    @apply space-y-0
-}
+  .pagefind-ui__message {
+    @apply my-3 px-(--card-padding) text-(--body-text-color);
+  }
 
-.pagefind-ui__result-excerpt{
-    @apply text-[13px] ml-[33px] line-clamp-1 text-[--caption-text-color]
-}
+  .pagefind-ui__results-area {
+    @apply relative p-1;
+  }
 
-.pagefind-ui__result-nested .pagefind-ui__result-excerpt{
-    @apply !pl-0
-}
+  .pagefind-ui__result-title {
+    @apply relative flex items-center gap-[0.75rem] text-[15px] text-(--title-text-color) before:inset-0 before:inline-block before:size-5 before:bg-[url("/docsIcon.svg")] dark:before:bg-[url("/docsDarkIcon.svg")] dark:before:opacity-75;
+  }
 
-.pagefind-ui__result{
-    @apply relative hover:bg-[--ui-soft-bg] dark:hover:bg-gray-950/30 rounded-lg py-3.5 px-4 hover:before:opacity-0 last:before:hidden before:absolute before:right-0 before:left-12 before:bottom-0 before:h-px before:bg-[--ui-border-color]
-}
+  .pagefind-ui__results {
+    @apply space-y-0;
+  }
 
-.pagefind-ui__result-link{
-    @apply hover:text-info-600 dark:hover:text-info-400
-}
+  .pagefind-ui__result-excerpt {
+    @apply ml-[33px] line-clamp-1 text-[13px] text-(--caption-text-color);
+  }
 
-mark{
-    @apply !bg-transparent !font-medium text-[--title-text-color]
-}
+  .pagefind-ui__result-nested .pagefind-ui__result-excerpt {
+    @apply pl-0!;
+  }
 
-.pagefind-ui__button {
-    @apply flex justify-center items-center mx-auto mt-6 mb-2 h-9 px-4 text-sm dark:border text-[--title-text-color] hover:brightness-95 font-medium w-fit bg-[--ui-soft-bg] rounded-[--btn-radius]
+  .pagefind-ui__result {
+    @apply relative rounded-lg px-4 py-3.5 before:absolute before:bottom-0 before:left-12 before:right-0 before:h-px before:bg-(--ui-border-color) last:before:hidden hover:bg-(--ui-soft-bg) hover:before:opacity-0 dark:hover:bg-gray-950/30;
+  }
+
+  .pagefind-ui__result-link {
+    @apply hover:text-info-600 dark:hover:text-info-400;
+  }
+
+  mark {
+    @apply bg-transparent! font-medium! text-(--title-text-color);
+  }
+
+  .pagefind-ui__button {
+    @apply mx-auto mb-2 mt-6 flex h-9 w-fit items-center justify-center rounded-(--btn-radius) bg-(--ui-soft-bg) px-4 text-sm font-medium text-(--title-text-color) hover:brightness-95 dark:border;
+  }
 }

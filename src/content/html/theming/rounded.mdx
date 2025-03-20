@@ -73,7 +73,7 @@ export const roundedVars = {
 <div className="space-y-20">
 
     <div>
-        Adjust the border radius of your components using the `data-rounded` attribute. Start with importing and adding the `rounded` plugin to your config's `plugins` array
+        Adjust the border radius of your components using the `data-rounded` attribute. Start with importing and adding the `rounded-xs` plugin to your config's `plugins` array
 
         <DocsStackedSnippets snippets={rounded} client:visible />
     </div>
@@ -94,10 +94,10 @@ export const roundedVars = {
 
         <PreviewBlock codeBlocks={[{code:specificExample, lang:"tsx"}]}>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3" data-shade="900">
-                <div className="p-[--card-padding] h-20 text-[--body-text-color] feedback-bg card-shadow rounded-[--card-radius] border text-xs flex items-center justify-center">Theme rounded</div>
-                <div className="p-[--card-padding] h-20 text-[--body-text-color] feedback-bg card-shadow rounded-[--card-radius] border text-xs flex items-center justify-center">Theme rounded</div>
-                <div className="p-[--card-padding] h-20 text-[--body-text-color] feedback-bg card-shadow rounded-[--card-radius] border text-xs flex items-center justify-center">Theme rounded</div>
-                <div className="p-[--card-padding] h-20 text-[--title-text-color] feedback-bg card-shadow rounded-[--card-radius] border text-xs flex items-center justify-center border-gray-300 dark:border-gray-700" data-rounded="3xlarge">3xlarge</div>
+                <div className="p-(--card-padding) h-20 text-(--body-text-color) feedback-bg card-shadow rounded-(--card-radius) border text-xs flex items-center justify-center">Theme rounded</div>
+                <div className="p-(--card-padding) h-20 text-(--body-text-color) feedback-bg card-shadow rounded-(--card-radius) border text-xs flex items-center justify-center">Theme rounded</div>
+                <div className="p-(--card-padding) h-20 text-(--body-text-color) feedback-bg card-shadow rounded-(--card-radius) border text-xs flex items-center justify-center">Theme rounded</div>
+                <div className="p-(--card-padding) h-20 text-(--title-text-color) feedback-bg card-shadow rounded-(--card-radius) border text-xs flex items-center justify-center border-gray-300 dark:border-gray-700" data-rounded="3xlarge">3xlarge</div>
             </div>
         </PreviewBlock>
     </div>

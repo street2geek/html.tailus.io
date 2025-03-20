@@ -14,7 +14,7 @@ export function SiteHeader() {
     const isLarge = useMedia({ minWidth: '640px' })
 
     return (
-        <motion.div onMouseMove={(e) => mouseX.set(e.pageX)} onMouseLeave={() => mouseX.set(Infinity)} className="fixed inset-x-0 bottom-4 z-[51] mx-auto flex h-[3.55rem] w-fit items-end gap-2.5 rounded-[calc(var(--btn-radius)+6px)] border border-white/10 bg-white px-1.5 pb-1.5 shadow-md shadow-gray-950/5 ring-1 ring-gray-200 backdrop-blur-2xl dark:border-gray-500/25 dark:bg-gray-900/50 dark:shadow-gray-950/35 dark:ring-gray-950">
+        <motion.div onMouseMove={(e) => mouseX.set(e.pageX)} onMouseLeave={() => mouseX.set(Infinity)} className="fixed inset-x-0 bottom-4 z-51 mx-auto flex h-[3.55rem] w-fit items-end gap-2.5 rounded-[calc(var(--btn-radius)+6px)] border border-white/10 bg-white px-1.5 pb-1.5 shadow-md shadow-gray-950/5 ring-1 ring-gray-200 backdrop-blur-2xl dark:border-gray-500/25 dark:bg-gray-900/50 dark:shadow-gray-950/35 dark:ring-gray-950">
             <AppIcon mouseX={mouseX} tooltip="Home" href="/">
                 <svg className="relative size-full text-gray-950 transition group-active:scale-90 dark:text-white" width="32" height="32" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -65,7 +65,7 @@ export function SiteHeader() {
             )}
 
             <AppIcon mouseX={mouseX} onClick={toggleDarkMode} role="button" tooltip="Toggle Theme">
-                <svg className="absolute inset-0 m-auto size-full -rotate-180 scale-[2] p-2 text-white opacity-0 transition duration-500 will-change-transform group-active:scale-90 dark:rotate-0 dark:scale-100 dark:opacity-100" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256">
+                <svg className="absolute inset-0 m-auto size-full -rotate-180 scale-2 p-2 text-white opacity-0 transition duration-500 will-change-transform group-active:scale-90 dark:rotate-0 dark:scale-100 dark:opacity-100" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256">
                     <g fill="currentColor">
                         <path d="M184 128a56 56 0 1 1-56-56a56 56 0 0 1 56 56" opacity=".2" />
                         <path d="M120 40V16a8 8 0 0 1 16 0v24a8 8 0 0 1-16 0m72 88a64 64 0 1 1-64-64a64.07 64.07 0 0 1 64 64m-16 0a48 48 0 1 0-48 48a48.05 48.05 0 0 0 48-48M58.34 69.66a8 8 0 0 0 11.32-11.32l-16-16a8 8 0 0 0-11.32 11.32Zm0 116.68l-16 16a8 8 0 0 0 11.32 11.32l16-16a8 8 0 0 0-11.32-11.32M192 72a8 8 0 0 0 5.66-2.34l16-16a8 8 0 0 0-11.32-11.32l-16 16A8 8 0 0 0 192 72m5.66 114.34a8 8 0 0 0-11.32 11.32l16 16a8 8 0 0 0 11.32-11.32ZM48 128a8 8 0 0 0-8-8H16a8 8 0 0 0 0 16h24a8 8 0 0 0 8-8m80 80a8 8 0 0 0-8 8v24a8 8 0 0 0 16 0v-24a8 8 0 0 0-8-8m112-88h-24a8 8 0 0 0 0 16h24a8 8 0 0 0 0-16" />
@@ -92,7 +92,7 @@ interface AppIconProps extends ButtonHTMLAttributes<HTMLButtonElement | HTMLAnch
 }
 
 const iconClasses =
-    'aspect-square shadow border border-gray-950/10 relative before:rounded-btn before:inset-0 dark:before:opacity-0 before:absolute before:inset-t before:border-t before:border-white shadow-gray-950/5 bg-gray-100 rounded-btn group p-2.5 flex relative dark:bg-gray-800 dark:border-0 dark:border-t dark:border-white/10 hover:brightness-105 dark:hover:brightness-125 data-[state=active]:after:absolute data-[state=active]:after:-bottom-2 data-[state=active]:after:opacity-50 data-[state=active]:after:inset-x-0 data-[state=active]:after:size-1 data-[state=active]:after:rounded-full  data-[state=active]:after:bg-[--title-text-color] data-[state=active]:after:mx-auto'
+    'aspect-square shadow-2xs border border-gray-950/10 relative before:rounded-btn before:inset-0 dark:before:opacity-0 before:absolute before:inset-t before:border-t before:border-white shadow-gray-950/5 bg-gray-100 rounded-btn group p-2.5 flex relative dark:bg-gray-800 dark:border-0 dark:border-t dark:border-white/10 hover:brightness-105 dark:hover:brightness-125 data-[state=active]:after:absolute data-[state=active]:after:-bottom-2 data-[state=active]:after:opacity-50 data-[state=active]:after:inset-x-0 data-[state=active]:after:size-1 data-[state=active]:after:rounded-full  data-[state=active]:after:bg-(--title-text-color) data-[state=active]:after:mx-auto'
 
 const AppIcon: React.FC<AppIconProps> = ({ mouseX, tooltip, href, children, isActive, ...props }) => {
     const isLarge = useMedia({ minWidth: '1024px' })

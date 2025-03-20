@@ -2,7 +2,7 @@ import { persistentAtom as atom } from "@nanostores/persistent";
 import type {  Shade, Rounded, Palette, Theme } from "src/types";
 
 export const $shade = atom<Shade>("shade", "900");
-export const $rounded = atom<Rounded>("rounded", "large");
+export const $rounded = atom<Rounded>("rounded-xs", "large");
 export const $palette = atom<Palette>("palette", "tls");
 export const $theme = atom<Theme>("theme", "dark");
 

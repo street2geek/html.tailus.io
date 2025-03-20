@@ -10,8 +10,8 @@ const htmlCode = `<div class="fixed inset-0 isolate hidden contain-strict lg:blo
     <div class="fixed left-0 top-0 h-[1280px] w-[240px] -rotate-45 rounded-full bg-[radial-gradient(50%_50%_at_50%_50%,hsla(0,0%,85%,.06)_0,hsla(0,0%,45%,.02)_80%,transparent_100%)] [translate:5%_-50%]"></div>
     <div class="fixed left-0 top-0 h-[1280px] w-[240px] -translate-y-[350px] -rotate-45 bg-[radial-gradient(50%_50%_at_50%_50%,hsla(0,0%,85%,.04)_0,hsla(0,0%,45%,.02)_80%,transparent_100%)]"></div>
 </div>
-<div class="fixed inset-x-0 bottom-12 hidden h-px w-1/2 bg-[--ui-border-color] lg:block"></div>
-<div class="fixed inset-y-0 left-1/2 hidden w-px bg-[--ui-border-color] lg:block"></div>
+<div class="fixed inset-x-0 bottom-12 hidden h-px w-1/2 bg-(--ui-border-color) lg:block"></div>
+<div class="fixed inset-y-0 left-1/2 hidden w-px bg-(--ui-border-color) lg:block"></div>
 <main class="relative mx-auto grid h-full min-h-screen max-w-5xl px-6 lg:grid-cols-2">
     <div class="relative inset-y-0 grid [grid-template-rows:1fr_auto]">
         <div class="relative h-full py-6 pr-6 lg:py-20">
@@ -148,8 +148,8 @@ export default function SignUpPage(){
                 <div className="fixed left-0 top-0 h-[1280px] w-[240px] -rotate-45 rounded-full bg-[radial-gradient(50%_50%_at_50%_50%,hsla(0,0%,85%,.06)_0,hsla(0,0%,45%,.02)_80%,transparent_100%)] [translate:5%_-50%]"></div>
                 <div className="fixed left-0 top-0 h-[1280px] w-[240px] -translate-y-[350px] -rotate-45 bg-[radial-gradient(50%_50%_at_50%_50%,hsla(0,0%,85%,.04)_0,hsla(0,0%,45%,.02)_80%,transparent_100%)]"></div>
             </div>
-            <div className="fixed inset-x-0 bottom-12 hidden h-px w-1/2 bg-[--ui-border-color] lg:block"></div>
-            <div className="fixed inset-y-0 left-1/2 hidden w-px bg-[--ui-border-color] lg:block"></div>
+            <div className="fixed inset-x-0 bottom-12 hidden h-px w-1/2 bg-(--ui-border-color) lg:block"></div>
+            <div className="fixed inset-y-0 left-1/2 hidden w-px bg-(--ui-border-color) lg:block"></div>
             <main className="relative mx-auto grid h-full min-h-screen max-w-5xl px-6 lg:grid-cols-2">
                 <div className="relative inset-y-0 grid [grid-template-rows:1fr_auto]">
                     <div className="relative h-full py-6 pr-6 lg:py-20">
@@ -335,7 +335,7 @@ const nuxtjsCode = `<template>
                 </div>
             </div>
 
-            <div data-shade="925" class="card variant-soft rounded-[calc(var(--card-radius)-4px)] dark:!bg-[--ui-bg]">
+            <div data-shade="925" class="card variant-soft rounded-[calc(var(--card-radius)-4px)] dark:bg-(--ui-bg)!">
                 <p class="text-center text-sm">
                     Don't have an account ?
                     <a href="#" class="link intent-neutral variant-underlined"> Create account</a>

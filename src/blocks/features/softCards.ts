@@ -8,10 +8,10 @@ const htmlCode = `<section class="py-32">
         </div>
         <div class="mt-16 grid gap-6 *:text-center sm:grid-cols-2 lg:grid-cols-3 dark:[--ui-soft-bg:var(--ui-bg)]">
             <div class="card variant-soft group">
-                <div class="relative mx-auto size-36 duration-300 [--ui-border-color:theme(colors.gray.950/0.1)] group-hover:[--ui-border-color:theme(colors.gray.950/0.2)] dark:[--ui-border-color:theme(colors.white/0.15)] dark:group-hover:bg-primary-950 dark:group-hover:[--ui-border-color:theme(colors.white/0.2)]">
+                <div class="relative mx-auto size-36 duration-300 [--ui-border-color:var(--color-gray-950)]/10 group-hover:[--ui-border-color:var(--color-gray-950)]/20 dark:[--ui-border-color:var(--color-white)]/15 dark:group-hover:bg-primary-950 dark:group-hover:[--ui-border-color:var(--color-white)]/20">
                     <div class="absolute inset-0 bg-[linear-gradient(to_right,var(--ui-border-color)_1px,transparent_1px),linear-gradient(to_bottom,var(--ui-border-color)_1px,transparent_1px)] bg-[size:24px_24px]"></div>
-                    <div class="absolute inset-0 bg-gradient-to-t from-[--ui-soft-bg] via-transparent to-[--ui-soft-bg]"></div>
-                    <div class="absolute inset-0 bg-gradient-to-r from-[--ui-soft-bg] via-transparent to-[--ui-soft-bg]"></div>
+                    <div class="absolute inset-0 bg-linear-to-t from-(--ui-soft-bg) via-transparent to-(--ui-soft-bg)"></div>
+                    <div class="absolute inset-0 bg-linear-to-r from-(--ui-soft-bg) via-transparent to-(--ui-soft-bg)"></div>
                     <div class="bg-ui absolute inset-0 m-auto flex size-12 items-center justify-center border-l border-t">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
                             <path fill-rule="evenodd" d="M14.615 1.595a.75.75 0 0 1 .359.852L12.982 9.75h7.268a.75.75 0 0 1 .548 1.262l-10.5 11.25a.75.75 0 0 1-1.272-.71l1.992-7.302H3.75a.75.75 0 0 1-.548-1.262l10.5-11.25a.75.75 0 0 1 .913-.143Z" clip-rule="evenodd"></path>
@@ -22,10 +22,10 @@ const htmlCode = `<section class="py-32">
                 <p class="mt-3 text-sm">Extensive customization options, allowing you to tailor every aspect to meet your specific needs.</p>
             </div>
             <div class="card variant-soft group">
-                <div class="relative mx-auto size-36 duration-300 [--ui-border-color:theme(colors.gray.950/0.1)] group-hover:[--ui-border-color:theme(colors.gray.950/0.2)] dark:[--ui-border-color:theme(colors.white/0.15)] dark:group-hover:bg-primary-950 dark:group-hover:[--ui-border-color:theme(colors.white/0.2)]">
+                <div class="relative mx-auto size-36 duration-300 [--ui-border-color:var(--color-gray-950)]/10 group-hover:[--ui-border-color:var(--color-gray-950)]/20 dark:[--ui-border-color:var(--color-white)]/15 dark:group-hover:bg-primary-950 dark:group-hover:[--ui-border-color:var(--color-white)]/20">
                     <div class="absolute inset-0 bg-[linear-gradient(to_right,var(--ui-border-color)_1px,transparent_1px),linear-gradient(to_bottom,var(--ui-border-color)_1px,transparent_1px)] bg-[size:24px_24px]"></div>
-                    <div class="absolute inset-0 bg-gradient-to-t from-[--ui-soft-bg] via-transparent to-[--ui-soft-bg]"></div>
-                    <div class="absolute inset-0 bg-gradient-to-r from-[--ui-soft-bg] via-transparent to-[--ui-soft-bg]"></div>
+                    <div class="absolute inset-0 bg-linear-to-t from-(--ui-soft-bg) via-transparent to-(--ui-soft-bg)"></div>
+                    <div class="absolute inset-0 bg-linear-to-r from-(--ui-soft-bg) via-transparent to-(--ui-soft-bg)"></div>
                     <div class="bg-ui absolute inset-0 m-auto flex size-12 items-center justify-center border-l border-t">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
                             <path d="M17.004 10.407c.138.435-.216.842-.672.842h-3.465a.75.75 0 0 1-.65-.375l-1.732-3c-.229-.396-.053-.907.393-1.004a5.252 5.252 0 0 1 6.126 3.537ZM8.12 8.464c.307-.338.838-.235 1.066.16l1.732 3a.75.75 0 0 1 0 .75l-1.732 3c-.229.397-.76.5-1.067.161A5.23 5.23 0 0 1 6.75 12a5.23 5.23 0 0 1 1.37-3.536ZM10.878 17.13c-.447-.098-.623-.608-.394-1.004l1.733-3.002a.75.75 0 0 1 .65-.375h3.465c.457 0 .81.407.672.842a5.252 5.252 0 0 1-6.126 3.539Z"></path>
@@ -40,10 +40,10 @@ const htmlCode = `<section class="py-32">
                 <p class="mt-3 text-sm">From design elements to functionality, you have complete control to create a unique and personalized experience.</p>
             </div>
             <div class="card variant-soft group">
-                <div class="relative mx-auto size-36 duration-300 [--ui-border-color:theme(colors.gray.950/0.1)] group-hover:[--ui-border-color:theme(colors.gray.950/0.2)] dark:[--ui-border-color:theme(colors.white/0.15)] dark:group-hover:bg-primary-950 dark:group-hover:[--ui-border-color:theme(colors.white/0.2)]">
+                <div class="relative mx-auto size-36 duration-300 [--ui-border-color:var(--color-gray-950)]/10 group-hover:[--ui-border-color:var(--color-gray-950)]/20 dark:[--ui-border-color:var(--color-white)]/15 dark:group-hover:bg-primary-950 dark:group-hover:[--ui-border-color:var(--color-white)]/20">
                     <div class="absolute inset-0 bg-[linear-gradient(to_right,var(--ui-border-color)_1px,transparent_1px),linear-gradient(to_bottom,var(--ui-border-color)_1px,transparent_1px)] bg-[size:24px_24px]"></div>
-                    <div class="absolute inset-0 bg-gradient-to-t from-[--ui-soft-bg] via-transparent to-[--ui-soft-bg]"></div>
-                    <div class="absolute inset-0 bg-gradient-to-r from-[--ui-soft-bg] via-transparent to-[--ui-soft-bg]"></div>
+                    <div class="absolute inset-0 bg-linear-to-t from-(--ui-soft-bg) via-transparent to-(--ui-soft-bg)"></div>
+                    <div class="absolute inset-0 bg-linear-to-r from-(--ui-soft-bg) via-transparent to-(--ui-soft-bg)"></div>
                     <div class="bg-ui absolute inset-0 m-auto flex size-12 items-center justify-center border-l border-t">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
                             <path
@@ -70,10 +70,10 @@ const nextjsCode = `export default function Features(){
                 </div>
                 <div className="mt-16 grid gap-6 *:text-center sm:grid-cols-2 lg:grid-cols-3 dark:[--ui-soft-bg:var(--ui-bg)]">
                     <div className="card variant-soft group">
-                        <div className="relative mx-auto size-36 duration-300 [--ui-border-color:theme(colors.gray.950/0.1)] group-hover:[--ui-border-color:theme(colors.gray.950/0.2)] dark:[--ui-border-color:theme(colors.white/0.15)] dark:group-hover:bg-primary-950 dark:group-hover:[--ui-border-color:theme(colors.white/0.2)]">
+                        <div className="relative mx-auto size-36 duration-300 [--ui-border-color:var(--color-gray-950)]/10 group-hover:[--ui-border-color:var(--color-gray-950)]/20 dark:[--ui-border-color:var(--color-white)]/15 dark:group-hover:bg-primary-950 dark:group-hover:[--ui-border-color:var(--color-white)]/20">
                             <div className="absolute inset-0 bg-[linear-gradient(to_right,var(--ui-border-color)_1px,transparent_1px),linear-gradient(to_bottom,var(--ui-border-color)_1px,transparent_1px)] bg-[size:24px_24px]"></div>
-                            <div className="absolute inset-0 bg-gradient-to-t from-[--ui-soft-bg] via-transparent to-[--ui-soft-bg]"></div>
-                            <div className="absolute inset-0 bg-gradient-to-r from-[--ui-soft-bg] via-transparent to-[--ui-soft-bg]"></div>
+                            <div className="absolute inset-0 bg-linear-to-t from-(--ui-soft-bg) via-transparent to-(--ui-soft-bg)"></div>
+                            <div className="absolute inset-0 bg-linear-to-r from-(--ui-soft-bg) via-transparent to-(--ui-soft-bg)"></div>
                             <div className="bg-ui absolute inset-0 m-auto flex size-12 items-center justify-center border-l border-t">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
                                     <path fillRule="evenodd" d="M14.615 1.595a.75.75 0 0 1 .359.852L12.982 9.75h7.268a.75.75 0 0 1 .548 1.262l-10.5 11.25a.75.75 0 0 1-1.272-.71l1.992-7.302H3.75a.75.75 0 0 1-.548-1.262l10.5-11.25a.75.75 0 0 1 .913-.143Z" clip-rule="evenodd"></path>
@@ -84,10 +84,10 @@ const nextjsCode = `export default function Features(){
                         <p className="mt-3 text-sm">Extensive customization options, allowing you to tailor every aspect to meet your specific needs.</p>
                     </div>
                     <div className="card variant-soft group">
-                        <div className="relative mx-auto size-36 duration-300 [--ui-border-color:theme(colors.gray.950/0.1)] group-hover:[--ui-border-color:theme(colors.gray.950/0.2)] dark:[--ui-border-color:theme(colors.white/0.15)] dark:group-hover:bg-primary-950 dark:group-hover:[--ui-border-color:theme(colors.white/0.2)]">
+                        <div className="relative mx-auto size-36 duration-300 [--ui-border-color:var(--color-gray-950)]/10 group-hover:[--ui-border-color:var(--color-gray-950)]/20 dark:[--ui-border-color:var(--color-white)]/15 dark:group-hover:bg-primary-950 dark:group-hover:[--ui-border-color:var(--color-white)]/20">
                             <div className="absolute inset-0 bg-[linear-gradient(to_right,var(--ui-border-color)_1px,transparent_1px),linear-gradient(to_bottom,var(--ui-border-color)_1px,transparent_1px)] bg-[size:24px_24px]"></div>
-                            <div className="absolute inset-0 bg-gradient-to-t from-[--ui-soft-bg] via-transparent to-[--ui-soft-bg]"></div>
-                            <div className="absolute inset-0 bg-gradient-to-r from-[--ui-soft-bg] via-transparent to-[--ui-soft-bg]"></div>
+                            <div className="absolute inset-0 bg-linear-to-t from-(--ui-soft-bg) via-transparent to-(--ui-soft-bg)"></div>
+                            <div className="absolute inset-0 bg-linear-to-r from-(--ui-soft-bg) via-transparent to-(--ui-soft-bg)"></div>
                             <div className="bg-ui absolute inset-0 m-auto flex size-12 items-center justify-center border-l border-t">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
                                     <path d="M17.004 10.407c.138.435-.216.842-.672.842h-3.465a.75.75 0 0 1-.65-.375l-1.732-3c-.229-.396-.053-.907.393-1.004a5.252 5.252 0 0 1 6.126 3.537ZM8.12 8.464c.307-.338.838-.235 1.066.16l1.732 3a.75.75 0 0 1 0 .75l-1.732 3c-.229.397-.76.5-1.067.161A5.23 5.23 0 0 1 6.75 12a5.23 5.23 0 0 1 1.37-3.536ZM10.878 17.13c-.447-.098-.623-.608-.394-1.004l1.733-3.002a.75.75 0 0 1 .65-.375h3.465c.457 0 .81.407.672.842a5.252 5.252 0 0 1-6.126 3.539Z"></path>
@@ -102,10 +102,10 @@ const nextjsCode = `export default function Features(){
                         <p className="mt-3 text-sm">From design elements to functionality, you have complete control to create a unique and personalized experience.</p>
                     </div>
                     <div className="card variant-soft group">
-                        <div className="relative mx-auto size-36 duration-300 [--ui-border-color:theme(colors.gray.950/0.1)] group-hover:[--ui-border-color:theme(colors.gray.950/0.2)] dark:[--ui-border-color:theme(colors.white/0.15)] dark:group-hover:bg-primary-950 dark:group-hover:[--ui-border-color:theme(colors.white/0.2)]">
+                        <div className="relative mx-auto size-36 duration-300 [--ui-border-color:var(--color-gray-950)]/10 group-hover:[--ui-border-color:var(--color-gray-950)]/20 dark:[--ui-border-color:var(--color-white)]/15 dark:group-hover:bg-primary-950 dark:group-hover:[--ui-border-color:var(--color-white)]/20">
                             <div className="absolute inset-0 bg-[linear-gradient(to_right,var(--ui-border-color)_1px,transparent_1px),linear-gradient(to_bottom,var(--ui-border-color)_1px,transparent_1px)] bg-[size:24px_24px]"></div>
-                            <div className="absolute inset-0 bg-gradient-to-t from-[--ui-soft-bg] via-transparent to-[--ui-soft-bg]"></div>
-                            <div className="absolute inset-0 bg-gradient-to-r from-[--ui-soft-bg] via-transparent to-[--ui-soft-bg]"></div>
+                            <div className="absolute inset-0 bg-linear-to-t from-(--ui-soft-bg) via-transparent to-(--ui-soft-bg)"></div>
+                            <div className="absolute inset-0 bg-linear-to-r from-(--ui-soft-bg) via-transparent to-(--ui-soft-bg)"></div>
                             <div className="bg-ui absolute inset-0 m-auto flex size-12 items-center justify-center border-l border-t">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
                                     <path

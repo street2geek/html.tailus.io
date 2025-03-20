@@ -10,13 +10,13 @@ interface BoilerplateCardProps {
 }
 
 const RemixIcon = () => (
-    <svg className="mx-auto size-12 text-[--title-text-color]" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+    <svg className="mx-auto size-12 text-(--title-text-color)" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
         <path fill="currentColor" d="M21.511 18.508c.216 2.773.216 4.073.216 5.492H15.31c0-.309.006-.592.011-.878c.018-.892.036-1.821-.109-3.698c-.19-2.747-1.374-3.358-3.55-3.358H1.574v-5H11.97c2.748 0 4.122-.835 4.122-3.049c0-1.946-1.374-3.125-4.122-3.125H1.573V0h11.541c6.221 0 9.313 2.938 9.313 7.632c0 3.511-2.176 5.8-5.114 6.182c2.48.497 3.93 1.909 4.198 4.694M1.573 24v-3.727h6.784c1.133 0 1.379.84 1.379 1.342V24Z" />
     </svg>
 );
 
 const ViteIcon = () => (
-    <svg className="mx-auto size-12 text-[--title-text-color]" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 257">
+    <svg className="mx-auto size-12 text-(--title-text-color)" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 257">
         <defs>
             <linearGradient id="logosVitejs0" x1="-.828%" x2="57.636%" y1="7.652%" y2="78.411%">
                 <stop offset="0%" stopColor="#41d1ff" />
@@ -34,7 +34,7 @@ const ViteIcon = () => (
 );
 
 const LaravelIcon = () => (
-    <svg className="mx-auto size-12 text-[--title-text-color]" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+    <svg className="mx-auto size-12 text-(--title-text-color)" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
         <path
             fill="currentColor"
             d="M21.7 6.53c.01.02.01.05.01.08v4.29c0 .1-.06.22-.15.27l-3.61 2.08v4.11c0 .11-.05.21-.15.27l-7.52 4.33c-.02.01-.04.04-.06.04H10s0-.03-.04-.04l-7.52-4.33a.32.32 0 0 1-.15-.27V4.5c0-.05 0-.08.01-.1c0-.01.01-.02.01-.03c0-.02.01-.03.02-.05c0-.01.01-.02.02-.03l.03-.03l.03-.03c.01-.01.02-.02.03-.02L6.2 2.04c.1-.04.22-.04.3 0l3.78 2.17c.01.01.02.01.03.02l.03.03l.03.03c.01.01.02.02.02.03c.01.02.02.03.02.05c0 .01.01.02.01.03c.01.03.01.05.01.1v8l3.14-1.78V6.61c0-.03 0-.06.01-.08l.01-.03s.01-.03.02-.05c0-.01.01-.02.02-.03l.03-.03l.03-.03c.01-.01.02-.02.03-.02l3.78-2.17c.08-.06.2-.06.3 0l3.76 2.17c.01 0 .02.01.03.02l.03.03l.03.03c.01.01.01.02.02.03c.01.02.01.05.02.05s.01 0 .01.03m-.61 4.19V7.15l-3.14 1.8v3.55zm-3.76 6.46V13.6l-6.9 3.94v3.61zM2.91 5v12.18l6.9 3.97v-3.61l-3.6-2.04H6.2c-.01 0-.02 0-.03-.03c-.01 0-.02-.01-.03-.02l-.03-.03c-.01-.01-.01-.02-.02-.03c-.01-.02-.01-.03-.02-.04c0-.02-.01-.03-.01-.04c-.01-.01-.01-.03-.01-.04V6.82zm3.45-2.32L3.23 4.5l3.13 1.78L9.5 4.5zm3.45 10.2V5L6.67 6.82v7.87zm7.83-8.08L14.5 6.61l3.14 1.8l3.13-1.8zm-.31 4.15l-3.14-1.8v3.57l3.14 1.78zM10.12 17L17 13.06l-3.12-1.8L7 15.23z"
@@ -43,7 +43,7 @@ const LaravelIcon = () => (
 );
 
 const GatsbyIcon = () => (
-    <svg className="mx-auto size-12 text-[--title-text-color]" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+    <svg className="mx-auto size-12 text-(--title-text-color)" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
         <path fill="currentColor" d="M12 2a10 10 0 0 1 10 10a10 10 0 0 1-10 10A10 10 0 0 1 2 12A10 10 0 0 1 12 2m0 2c-3.73 0-6.86 2.55-7.75 6L14 19.75c3.45-.89 6-4.02 6-7.75h-5.25v1.5h3.45a6.37 6.37 0 0 1-3.89 4.44L6.06 9.69C7 7.31 9.3 5.63 12 5.63c2.13 0 4 1.04 5.18 2.65l1.23-1.06A7.96 7.96 0 0 0 12 4m-8 8a8 8 0 0 0 8 8c.04 0 .09 0-8-8" />
     </svg>
 );
@@ -52,7 +52,7 @@ const BoilerplateCard: React.FC<BoilerplateCardProps> = ({ href, isBlank, framew
     const iconClasses = 'size-14 m-auto';
 
     return (
-        <a className="card-shadow rounded-[--card-radius] border bg-[--ui-bg] p-[--card-padding] transition-[box-shadow] duration-300 [--card-shadow-opacity:0] hover:[--card-shadow-opacity:0.05] dark:[--card-shadow-opacity:0.25] dark:hover:[--card-shadow-opacity:0.5]" href={href} target={isBlank && '_blank'}>
+        <a className="card-shadow rounded-(--card-radius) border bg-(--ui-bg) p-(--card-padding) transition-[box-shadow] duration-300 [--card-shadow-opacity:0] hover:[--card-shadow-opacity:0.05] dark:[--card-shadow-opacity:0.25] dark:hover:[--card-shadow-opacity:0.5]" href={href} target={isBlank && '_blank'}>
             {framework === 'react' && <ReactIcon className={twMerge(iconClasses, 'h-12 w-12')} />}
             {framework === 'astro' && <AstroIcon className={twMerge(iconClasses, 'h-12 w-12')} />}
             {framework === 'svelteKit' && <SvelteIcon className={twMerge(iconClasses, 'h-12 w-12')} />}

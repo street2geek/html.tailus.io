@@ -3,7 +3,7 @@ import type { Code } from "src/types";
 const htmlCode = `<section class="bg-white py-32 dark:bg-gray-950">
     <div class="mx-auto max-w-5xl px-6">
         <div class="w-full overflow-auto lg:overflow-visible">
-            <table class="w-[200vw] table-auto border-separate border-spacing-x-3 md:w-full dark:[--ui-border-color:theme(colors.gray.700/0.4)] dark:[--ui-soft-bg:var(--ui-bg)]">
+            <table class="w-[200vw] table-auto border-separate border-spacing-x-3 md:w-full dark:[--ui-border-color:var(--color-gray-700)]/40 dark:[--ui-soft-bg:var(--ui-bg)]">
                 <thead class="text-title sticky top-0 bg-white dark:bg-gray-950">
                     <tr class="*:py-4 *:text-left *:font-medium">
                         <th class="lg:w-2/5"></th>
@@ -13,7 +13,7 @@ const htmlCode = `<section class="bg-white py-32 dark:bg-gray-950">
                                 <span class="btn-label">Get Started</span>
                             </a>
                         </th>
-                        <th class="bg-ui-soft space-y-3 rounded-t-[--card-radius] px-4">
+                        <th class="bg-ui-soft space-y-3 rounded-t-(--card-radius) px-4">
                             <span>Pro</span>
                             <a href="#" class="btn variant-primary sz-xs w-fit">
                                 <span class="btn-label">Get Started</span>
@@ -181,7 +181,7 @@ const htmlCode = `<section class="bg-white py-32 dark:bg-gray-950">
                     <tr class="*:py-6 *:text-sm">
                         <td></td>
                         <td></td>
-                        <td class="bg-ui-soft rounded-b-[--card-radius] border-none"></td>
+                        <td class="bg-ui-soft rounded-b-(--card-radius) border-none"></td>
                         <td></td>
                     </tr>
                 </tbody>
@@ -197,7 +197,7 @@ export default function PricingComparator(){
         <section className="bg-white py-32 dark:bg-gray-950">
             <div className="mx-auto max-w-5xl px-6">
                 <div className="w-full overflow-auto lg:overflow-visible">
-                    <table className="w-[200vw] table-auto border-separate border-spacing-x-3 md:w-full dark:[--ui-border-color:theme(colors.gray.700/0.4)] dark:[--ui-soft-bg:var(--ui-bg)]">
+                    <table className="w-[200vw] table-auto border-separate border-spacing-x-3 md:w-full dark:[--ui-border-color:var(--color-gray-700)]/40 dark:[--ui-soft-bg:var(--ui-bg)]">
                         <thead className="text-title sticky top-0 bg-white dark:bg-gray-950">
                             <tr className="*:py-4 *:text-left *:font-medium">
                                 <th className="lg:w-2/5"></th>
@@ -207,7 +207,7 @@ export default function PricingComparator(){
                                         span className="btn-label">Get Started</span>
                                     </Link>
                                 </th>
-                                <th className="bg-ui-soft space-y-3 rounded-t-[--card-radius] px-4">
+                                <th className="bg-ui-soft space-y-3 rounded-t-(--card-radius) px-4">
                                     <span>Pro</span>
                                     <Link href="#" className="btn variant-primary sz-xs w-fit">
                                         span className="btn-label">Get Started</span>
@@ -375,7 +375,7 @@ export default function PricingComparator(){
                             <tr className="*:py-6 *:text-sm">
                                 <td></td>
                                 <td></td>
-                                <td className="bg-ui-soft rounded-b-[--card-radius] border-none"></td>
+                                <td className="bg-ui-soft rounded-b-(--card-radius) border-none"></td>
                                 <td></td>
                             </tr>
                         </tbody>

@@ -17,7 +17,7 @@ const SearchButton = () => {
     }, [$isOpen])
 
     return (
-        <button onClick={setIsOpen} className={`group relative flex h-9 w-9 items-center justify-center gap-3 rounded-[--btn-radius] bg-white backdrop-blur-2xl hover:brightness-105 lg:w-fit lg:justify-between lg:border lg:px-2 dark:bg-transparent lg:dark:bg-gray-900`} aria-label="open search">
+        <button onClick={setIsOpen} className={`group relative flex h-9 w-9 items-center justify-center gap-3 rounded-(--btn-radius) bg-white backdrop-blur-2xl hover:brightness-105 lg:w-fit lg:justify-between lg:border lg:px-2 dark:bg-transparent lg:dark:bg-gray-900`} aria-label="open search">
             <div className="flex items-center gap-1.5">
                 <SearchIcon className="size-4 text-gray-600 dark:text-gray-400" />
                 <span className="hidden text-sm text-gray-700 lg:block dark:text-gray-300">Search...</span>

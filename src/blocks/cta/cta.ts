@@ -1,6 +1,6 @@
 import type { Code } from "src/types";
 
-const htmlCode = `<section class="bg-gradient-to-b py-32 dark:from-primary-950">
+const htmlCode = `<section class="bg-linear-to-b py-32 dark:from-primary-950">
     <div class="mx-auto max-w-5xl px-6">
         <div class="text-center">
             <h2 class="text-title text-balance text-4xl font-semibold lg:text-5xl">Start Building</h2>
@@ -22,7 +22,7 @@ const nextjsCode = `import Link from 'next/link';
 
 export default function CallToAction(){
     return (
-        <section className="bg-gradient-to-b py-32 dark:from-primary-950">
+        <section className="bg-linear-to-b py-32 dark:from-primary-950">
             <div className="mx-auto max-w-5xl px-6">
                 <div className="text-center">
                     <h2 className="text-title text-balance text-4xl font-semibold lg:text-5xl">Start Building</h2>

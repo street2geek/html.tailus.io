@@ -14,7 +14,7 @@ import CodeSnippet from '@components/utilities/CodeSnippet'
 import { useMedia } from 'use-media'
 import type { Theme } from 'src/types'
 
-const radioItem = 'relative rounded-[calc(var(--btn-radius)-3px)] delay-75 duration-300 flex items-center justify-center h-8 px-2.5 gap-2 text-[--caption-text-color] transition-[color] hover:text-[--body-text-color] data-[state=checked]:scale-95 transition-transform will-change data-[state=checked]:text-[--title-text-color]'
+const radioItem = 'relative rounded-[calc(var(--btn-radius)-3px)] delay-75 duration-300 flex items-center justify-center h-8 px-2.5 gap-2 text-(--caption-text-color) transition-[color] hover:text-(--body-text-color) data-[state=checked]:scale-95 transition-transform will-change data-[state=checked]:text-(--title-text-color)'
 
 export default function BlocksCustomizer({ global = false }: { global?: boolean }) {
     const [isActive, setIsActive] = useState(false)
@@ -115,8 +115,8 @@ export default function BlocksCustomizer({ global = false }: { global?: boolean 
 
                         <div className="mb-8 mt-6 space-y-6">
                             <div className="relative">
-                                <div className={twMerge('absolute inset-[3px] w-1/2 rounded-[calc(var(--btn-radius)-3px)] border border-transparent bg-white shadow transition-transform duration-300 ease-in-out dark:border-white/5 dark:bg-[--ui-soft-bg]', theme == 'dark' && 'translate-x-[calc(100%-6px)]')}></div>
-                                <RadioGroup.Root className="grid grid-cols-2 gap-0.5 rounded-[--btn-radius] border border-gray-950/5 bg-gray-950/5 p-0.5 dark:border-white/5 dark:bg-gray-950/50" defaultValue="dark" onValueChange={handleValueChange}>
+                                <div className={twMerge('absolute inset-[3px] w-1/2 rounded-[calc(var(--btn-radius)-3px)] border border-transparent bg-white shadow-2xs transition-transform duration-300 ease-in-out dark:border-white/5 dark:bg-(--ui-soft-bg)', theme == 'dark' && 'translate-x-[calc(100%-6px)]')}></div>
+                                <RadioGroup.Root className="grid grid-cols-2 gap-0.5 rounded-(--btn-radius) border border-gray-950/5 bg-gray-950/5 p-0.5 dark:border-white/5 dark:bg-gray-950/50" defaultValue="dark" onValueChange={handleValueChange}>
                                     <RadioGroup.Item aria-label="Light theme" value="light" className={radioItem}>
                                         <Sun className="size-4" />
                                         <span className="text-sm">Light</span>

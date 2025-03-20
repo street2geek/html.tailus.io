@@ -17,7 +17,7 @@ const { title = SITE_TITLE, description = SITE_DESCRIPTION, className } = Astro.
     function setCustomization(document) {
         const palette = localStorage.getItem('palette') || 'tls'
         const shade = localStorage.getItem('shade') || '900'
-        const rounded = localStorage.getItem('rounded') || 'large'
+        const rounded = localStorage.getItem('rounded-xs') || 'large'
         const theme = localStorage.getItem('theme') || 'dark'
 
         const root = document.documentElement

@@ -30,7 +30,7 @@ export const CodeSnippet: React.FC<CodeSnippetProps> = ({ code, lang, className,
     }, [code, lang]);
 
     return (
-        <div data-pagefind-ignore className={twMerge('group/snippet relative w-full rounded-[--card-radius] border backdrop-blur-xl dark:bg-gray-950/50', className)}>
+        <div data-pagefind-ignore className={twMerge('group/snippet relative w-full rounded-(--card-radius) border backdrop-blur-xl dark:bg-gray-950/50', className)}>
             {!asUIBlock && <CodeCopyButton code={code} className="group invisible absolute right-1 top-1 z-10 ml-auto scale-75 rounded-lg opacity-0 transition-all duration-200 group-hover/snippet:visible group-hover/snippet:scale-100 group-hover/snippet:opacity-100" />}
 
             <ScrollArea.Root className={twMerge('max-h-[20rem]', asUIBlock && 'max-h-[45rem]')} type="scroll">

@@ -8,7 +8,7 @@ const htmlCode = `<section class="py-32">
         </div>
 
         <div class="mt-20 grid gap-6 md:grid-cols-5 md:gap-0 dark:[--ui-soft-bg:var(--ui-bg)]">
-            <div class="card flex flex-col justify-between space-y-8 border md:col-span-2 md:my-[--card-radius] md:rounded-r-none md:border-r-0 lg:p-10">
+            <div class="card flex flex-col justify-between space-y-8 border md:col-span-2 md:my-(--card-radius) md:rounded-r-none md:border-r-0 lg:p-10">
                 <div class="space-y-4">
                     <div>
                         <h2 class="text-title font-medium">Free</h2>
@@ -27,7 +27,7 @@ const htmlCode = `<section class="py-32">
                 </div>
             </div>
 
-            <div class="card bg-ui dark:bg-ui-soft border shadow-lg shadow-gray-950/5 md:col-span-3 lg:p-10 dark:[--ui-border-color:theme(colors.gray.700/0.5)]">
+            <div class="card bg-ui dark:bg-ui-soft border shadow-lg shadow-gray-950/5 md:col-span-3 lg:p-10 dark:[--ui-border-color:var(--color-gray-700)]/50">
                 <div class="grid gap-6 sm:grid-cols-2">
                     <div class="space-y-4">
                         <div>
@@ -72,7 +72,7 @@ export default function Pricing(){
                 </div>
 
                 <div className="mt-20 grid gap-6 md:grid-cols-5 md:gap-0 dark:[--ui-soft-bg:var(--ui-bg)]">
-                    <div className="card flex flex-col justify-between space-y-8 border md:col-span-2 md:my-[--card-radius] md:rounded-r-none md:border-r-0 lg:p-10">
+                    <div className="card flex flex-col justify-between space-y-8 border md:col-span-2 md:my-(--card-radius) md:rounded-r-none md:border-r-0 lg:p-10">
                         <div className="space-y-4">
                             <div>
                                 <h2 className="text-title font-medium">Free</h2>
@@ -91,7 +91,7 @@ export default function Pricing(){
                         </div>
                     </div>
 
-                    <div className="card bg-ui dark:bg-ui-soft border shadow-lg shadow-gray-950/5 md:col-span-3 lg:p-10 dark:[--ui-border-color:theme(colors.gray.700/0.5)]">
+                    <div className="card bg-ui dark:bg-ui-soft border shadow-lg shadow-gray-950/5 md:col-span-3 lg:p-10 dark:[--ui-border-color:var(--color-gray-700)]/50">
                         <div className="grid gap-6 sm:grid-cols-2">
                             <div className="space-y-4">
                                 <div>

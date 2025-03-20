@@ -27,7 +27,7 @@ const htmlCode = `<section class="py-32">
                 </div>
             </div>
 
-            <div class="card bg-ui dark:bg-ui-soft tls-shadow-md flex flex-col justify-between space-y-8 shadow-gray-950/[0.03] dark:[--ui-border-color:theme(colors.gray.700/0.5)]">
+            <div class="card bg-ui dark:bg-ui-soft tls-shadow-md flex flex-col justify-between space-y-8 shadow-gray-950/[0.03] dark:[--ui-border-color:var(--color-gray-700)]/50">
                 <div class="space-y-4">
                     <div>
                         <h3 class="text-title font-medium">Basic</h3>
@@ -105,7 +105,7 @@ export default function Pricing(){
                         </div>
                     </div>
 
-                    <div className="card bg-ui dark:bg-ui-soft tls-shadow-md flex flex-col justify-between space-y-8 shadow-gray-950/[0.03] dark:[--ui-border-color:theme(colors.gray.700/0.5)]">
+                    <div className="card bg-ui dark:bg-ui-soft tls-shadow-md flex flex-col justify-between space-y-8 shadow-gray-950/[0.03] dark:[--ui-border-color:var(--color-gray-700)]/50">
                         <div className="space-y-4">
                             <div>
                                 <h3 className="text-title font-medium">Basic</h3>

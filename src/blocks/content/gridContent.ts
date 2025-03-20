@@ -8,7 +8,7 @@ const htmlCode = `<section class="py-32 bg-white dark:bg-transparent">
                 <h3 class="font-medieum text-title text-xl">Products</h3>
                 <p class="text-body">Gemini is evolving to be more than just the models. <span class="text-title font-medium">It supports an entire ecosystem</span> — from products innovate.</p>
                 <div class="relative pt-6">
-                    <div class="absolute inset-0 z-[1] bg-gradient-to-tl from-white dark:from-gray-950"></div>
+                    <div class="absolute inset-0 z-1 bg-linear-to-tl from-white dark:from-gray-950"></div>
                     <img class="grayscale" src="https://oxymor-st.tailus.io/_astro/bars.DEh8rxfi_2hxS64.webp" alt="" />
                 </div>
             </div>
@@ -17,7 +17,7 @@ const htmlCode = `<section class="py-32 bg-white dark:bg-transparent">
                 <p class="text-body">Gemini is evolving to be more than just the models. <span class="text-title font-medium">It supports an entire ecosystem</span> — from products innovate.</p>
 
                 <div class="relative pt-6">
-                    <div class="absolute inset-0 z-[1] bg-gradient-to-tl from-white dark:from-gray-950"></div>
+                    <div class="absolute inset-0 z-1 bg-linear-to-tl from-white dark:from-gray-950"></div>
                     <img class="grayscale" src="https://oxymor-st.tailus.io/_astro/areas.CthgT_WU_Z1eTdMG.webp" alt="" />
                 </div>
             </div>
@@ -35,7 +35,7 @@ const nextjsCode = `export default function ContentSection(){
                         <h3 className="font-medieum text-title text-xl">Products</h3>
                         <p className="text-body">Gemini is evolving to be more than just the models. <span className="text-title font-medium">It supports an entire ecosystem</span> — from products innovate.</p>
                         <div className="relative pt-6">
-                            <div className="absolute inset-0 z-[1] bg-gradient-to-tl from-white dark:from-gray-950"></div>
+                            <div className="absolute inset-0 z-1 bg-linear-to-tl from-white dark:from-gray-950"></div>
                             <img className="grayscale" src="https://oxymor-st.tailus.io/_astro/bars.DEh8rxfi_2hxS64.webp" alt="" />
                         </div>
                     </div>
@@ -44,7 +44,7 @@ const nextjsCode = `export default function ContentSection(){
                         <p className="text-body">Gemini is evolving to be more than just the models. <span className="text-title font-medium">It supports an entire ecosystem</span> — from products innovate.</p>
 
                         <div className="relative pt-6">
-                            <div className="absolute inset-0 z-[1] bg-gradient-to-tl from-white dark:from-gray-950"></div>
+                            <div className="absolute inset-0 z-1 bg-linear-to-tl from-white dark:from-gray-950"></div>
                             <img className="grayscale" src="https://oxymor-st.tailus.io/_astro/areas.CthgT_WU_Z1eTdMG.webp" alt="" />
                         </div>
                     </div>

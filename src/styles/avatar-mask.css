@@ -1,19 +1,19 @@
-@tailwind utilities;
+@import 'tailwindcss/utilities' layer(utilities);
 
+@config "./../../tailwind.config.ts";
 
-@layer utilities {
-    .avatar-mask {
-        -webkit-mask-image: url('/avatar-mask.svg');
-        mask-image: url('/avatar-mask.svg');
-        mask-size: cover;
-        -webkit-mask-size: cover;
-        mask-repeat: no-repeat;
-        -webkit-mask-repeat: no-repeat;
-        -webkit-mask-position: center;
-        mask-position: center;
-    }
-    .avatar-mask-none {
-        -webkit-mask-image: none;
-        mask-image: none;
-    }
+@utility avatar-mask {
+  -webkit-mask-image: url('/avatar-mask.svg');
+  mask-image: url('/avatar-mask.svg');
+  mask-size: cover;
+  -webkit-mask-size: cover;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+
+@utility avatar-mask-none {
+  -webkit-mask-image: none;
+  mask-image: none;
 }

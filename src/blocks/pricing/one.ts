@@ -30,8 +30,8 @@ const htmlCode = `<section class="py-32">
                 </div>
             </div>
 
-            <div class="card bg-ui tls-shadow-md relative shadow-gray-950/[0.03] [--ui-border-color:theme(colors.primary.600)] dark:shadow-primary-950/25">
-                <span class="absolute inset-x-0 -top-3 mx-auto flex h-6 w-fit items-center rounded-full bg-gradient-to-br from-purple-400 to-primary-600 px-3 py-1 text-xs font-medium text-white shadow-md">Popular</span>
+            <div class="card bg-ui tls-shadow-md relative shadow-gray-950/[0.03] [--ui-border-color:var(--color-primary-600)] dark:shadow-primary-950/25">
+                <span class="absolute inset-x-0 -top-3 mx-auto flex h-6 w-fit items-center rounded-full bg-linear-to-br from-purple-400 to-primary-600 px-3 py-1 text-xs font-medium text-white shadow-md">Popular</span>
                 <div class="flex flex-col justify-between space-y-8 [--ui-border-color:var(--input-border)]">
                     <div class="space-y-4">
                         <div>
@@ -120,8 +120,8 @@ export default function Pricing(){
                         </div>
                     </div>
 
-                    <div className="card bg-ui tls-shadow-md relative shadow-gray-950/[0.03] [--ui-border-color:theme(colors.primary.600)] dark:shadow-primary-950/25">
-                        <span className="absolute inset-x-0 -top-3 mx-auto flex h-6 w-fit items-center rounded-full bg-gradient-to-br from-purple-400 to-primary-600 px-3 py-1 text-xs font-medium text-white shadow-md">Popular</span>
+                    <div className="card bg-ui tls-shadow-md relative shadow-gray-950/[0.03] [--ui-border-color:var(--color-primary-600)] dark:shadow-primary-950/25">
+                        <span className="absolute inset-x-0 -top-3 mx-auto flex h-6 w-fit items-center rounded-full bg-linear-to-br from-purple-400 to-primary-600 px-3 py-1 text-xs font-medium text-white shadow-md">Popular</span>
                         <div className="flex flex-col justify-between space-y-8 [--ui-border-color:var(--input-border)]">
                             <div className="space-y-4">
                                 <div>

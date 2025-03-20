@@ -62,9 +62,9 @@ const blocksLinks = blocks
         <BlurDivs />
     </div>
     <div class="custom-scrollbar -ml-2 h-full overflow-y-scroll pl-2" id="linksParent">
-        <div class="space-y-6 pb-12 pt-6 [--body-text-color:theme(colors.gray.600)] lg:pb-6 lg:pt-12 dark:[--body-text-color:theme(colors.gray.400)]" data-rounded="full" data-shade="900">
+        <div class="space-y-6 pb-12 pt-6 [--body-text-color:var(--color-gray-600)] lg:pb-6 lg:pt-12 dark:[--body-text-color:var(--color-gray-400)]" data-rounded="full" data-shade="900">
             <div class="space-y-4" data-shade="800">
-                <a href="https://ui.tailus.io/react/get-started/introduction" class="flex items-center gap-3 text-[--body-text-color] hover:text-[--title-text-color]">
+                <a href="https://ui.tailus.io/react/get-started/introduction" class="flex items-center gap-3 text-(--body-text-color) hover:text-(--title-text-color)">
                     <svg class="size-4" xmlns="http://www.w3.org/2000/svg" width="1.13em" height="1em" viewBox="0 0 256 228"
                         ><path
                             fill="currentColor"
@@ -73,11 +73,11 @@ const blocksLinks = blocks
                     >
                     <span class="text-sm">React</span>
                 </a>
-                <a href="" class="flex items-center gap-3 text-[--title-text-color]">
+                <a href="" class="flex items-center gap-3 text-(--title-text-color)">
                     <svg class="size-4" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16"><path fill="currentColor" d="M.946 0L2.23 14.4L7.992 16l5.777-1.602L15.055 0zM12.26 4.71H5.502l.161 1.809H12.1l-.485 5.422l-3.623 1.004l-3.618-1.004l-.247-2.774H5.9l.126 1.41l1.967.53l.004-.001l1.968-.531l.204-2.29H4.048l-.476-5.341h8.847l-.158 1.766z"></path></svg>
                     <span class="text-sm font-medium">Html</span>
                 </a>
-                <a href="#" class="flex items-center gap-3 text-[--body-text-color] hover:text-[--title-text-color]">
+                <a href="#" class="flex items-center gap-3 text-(--body-text-color) hover:text-(--title-text-color)">
                     <svg class="size-4" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
                         ><path
                             fill="currentColor"
@@ -86,7 +86,7 @@ const blocksLinks = blocks
                     >
                     <span class="text-sm">Symfony</span>
                 </a>
-                <a href="https://ui.tailus.io/themer/get-started/introduction" class="flex items-center gap-3 text-[--body-text-color] hover:text-[--title-text-color]">
+                <a href="https://ui.tailus.io/themer/get-started/introduction" class="flex items-center gap-3 text-(--body-text-color) hover:text-(--title-text-color)">
                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
                         ><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
                             ><path d="m20.27 7.796l-3.61 1.876l-4.392 2.236a.548.548 0 0 1-.536 0L7.341 9.672L3.73 7.796a.594.594 0 0 1 0-1.06l8.014-3.925a.571.571 0 0 1 .512 0l8.014 3.925a.594.594 0 0 1 0 1.06"></path><path d="m7.34 9.672l-3.61 1.723a.594.594 0 0 0 0 1.06l3.61 1.876l4.392 2.236a.547.547 0 0 0 .536 0l4.391-2.236l3.611-1.875a.594.594 0 0 0 0-1.014l-3.61-1.77"></path><path
@@ -119,7 +119,7 @@ const blocksLinks = blocks
                                     ?.sort((a, b) => a.data.priorityOrder - b.data.priorityOrder)
                                     .map((page) => (
                                         <li>
-                                            <a href={`/${page.slug}`} class:list={currentPath === `/${page.slug}` ? activeLinkClasses : ''} class="flex items-center gap-2 text-[15px] text-[--body-text-color] transition duration-200 hover:text-gray-950 dark:hover:text-white">
+                                            <a href={`/${page.slug}`} class:list={currentPath === `/${page.slug}` ? activeLinkClasses : ''} class="flex items-center gap-2 text-[15px] text-(--body-text-color) transition duration-200 hover:text-gray-950 dark:hover:text-white">
                                                 <span class="capitalize">{pages[0].slug.split('/')[0] === page.slug.split('/').pop() ? 'Overview' : page.slug.split('/').pop().replace('-', ' ')}</span>
                                                 {page.data.badge && <DocsBadge badge={page.data.badge} />}
                                             </a>
@@ -135,7 +135,7 @@ const blocksLinks = blocks
                     {
                         blocksLinks.map((page) => (
                             <li>
-                                <a href={`/blocks/${page.href}`} class:list={currentPath === `/${page.href}` ? activeLinkClasses : ''} class="text-[15px] text-[--body-text-color] transition duration-200 hover:text-gray-950 dark:hover:text-white">
+                                <a href={`/blocks/${page.href}`} class:list={currentPath === `/${page.href}` ? activeLinkClasses : ''} class="text-[15px] text-(--body-text-color) transition duration-200 hover:text-gray-950 dark:hover:text-white">
                                     <span class="capitalize">{page.name}</span>
                                 </a>
                             </li>
