@@ -20,9 +20,6 @@ importers:
       '@astrojs/starlight':
         specifier: ^0.28.2
         version: 0.28.6(astro@4.16.13(rollup@4.27.3)(typescript@5.6.3))
-      '@astrojs/tailwind':
-        specifier: ^5.1.1
-        version: 5.1.2(astro@4.16.13(rollup@4.27.3)(typescript@5.6.3))(tailwindcss@4.0.14)
       '@flexilla/accordion':
         specifier: ^2.0.3
         version: 2.0.3
@@ -315,12 +312,6 @@ packages:
     resolution: {integrity: sha512-lY+rbRMIVxDGiXhS4lBuVrU2jTUezEt4QeTxUTHxfj2tuKBwquG7Jg+alON6l+uaV+anbOkFb001MMXZF8X85w==}
     peerDependencies:
       astro: ^4.14.0
-
-  '@astrojs/tailwind@5.1.2':
-    resolution: {integrity: sha512-IvOF0W/dtHElcXvhrPR35nHmhyV3cfz1EzPitMGtU7sYy9Hci3BNK1To6FWmVuuNKPxza1IgCGetSynJZL7fOg==}
-    peerDependencies:
-      astro: ^3.0.0 || ^4.0.0 || ^5.0.0-beta.0
-      tailwindcss: ^3.0.24
 
   '@astrojs/telemetry@3.1.0':
     resolution: {integrity: sha512-/ca/+D8MIKEC8/A9cSaPUqQNZm+Es/ZinRv0ZAzvu2ios7POQSsVD+VOj7/hypWNsNM3T7RpfgNq7H2TU1KEHA==}
@@ -3168,10 +3159,6 @@ packages:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
     engines: {node: '>= 0.8.0'}
 
-  lilconfig@3.1.2:
-    resolution: {integrity: sha512-eop+wDAvpItUys0FWkHIKeC9ybYrTGbU41U5K7+bttZZeohvnY7M9dZ5kB21GNWiFT2q1OoPTvncPCgSOVO5ow==}
-    engines: {node: '>=14'}
-
   load-yaml-file@0.2.0:
     resolution: {integrity: sha512-OfCBkGEw4nN6JLtgRidPX6QxjBQGQf72q3si2uvqyFEMbycSFFHwAZeXx6cJgFM9wmLrf9zBwCP3Ivqa+LLZPw==}
     engines: {node: '>=6'}
@@ -3590,18 +3577,6 @@ packages:
   possible-typed-array-names@1.0.0:
     resolution: {integrity: sha512-d7Uw+eZoloe0EHDIYoe+bQ5WXnGMOpmiZFTuMWCwpjzzkL2nTjcKiAk4hh8TjnGye2TwWOk3UXucZ+3rbmBa8Q==}
     engines: {node: '>= 0.4'}
-
-  postcss-load-config@4.0.2:
-    resolution: {integrity: sha512-bSVhyJGL00wMVoPUzAVAnbEoWyqRxkjv64tUl427SKnPrENtq6hJwUojroMz2VB+Q1edmi4IfrAPpami5VVgMQ==}
-    engines: {node: '>= 14'}
-    peerDependencies:
-      postcss: '>=8.0.9'
-      ts-node: '>=9.0.0'
-    peerDependenciesMeta:
-      postcss:
-        optional: true
-      ts-node:
-        optional: true
 
   postcss-nested@6.2.0:
     resolution: {integrity: sha512-HQbt28KulC5AJzG+cZtj9kvKB93CFCdLvog1WFLf1D+xmMvPGlBstkpTEZfK5+AN9hfJocyBFCNiqyS48bpgzQ==}
@@ -4758,16 +4733,6 @@ snapshots:
       vfile: 6.0.3
     transitivePeerDependencies:
       - supports-color
-
-  '@astrojs/tailwind@5.1.2(astro@4.16.13(rollup@4.27.3)(typescript@5.6.3))(tailwindcss@4.0.14)':
-    dependencies:
-      astro: 4.16.13(rollup@4.27.3)(typescript@5.6.3)
-      autoprefixer: 10.4.20(postcss@8.4.49)
-      postcss: 8.4.49
-      postcss-load-config: 4.0.2(postcss@8.4.49)
-      tailwindcss: 4.0.14
-    transitivePeerDependencies:
-      - ts-node
 
   '@astrojs/telemetry@3.1.0':
     dependencies:
@@ -8020,8 +7985,6 @@ snapshots:
       prelude-ls: 1.2.1
       type-check: 0.4.0
 
-  lilconfig@3.1.2: {}
-
   load-yaml-file@0.2.0:
     dependencies:
       graceful-fs: 4.2.11
@@ -8747,13 +8710,6 @@ snapshots:
       find-up: 4.1.0
 
   possible-typed-array-names@1.0.0: {}
-
-  postcss-load-config@4.0.2(postcss@8.4.49):
-    dependencies:
-      lilconfig: 3.1.2
-      yaml: 2.6.1
-    optionalDependencies:
-      postcss: 8.4.49
 
   postcss-nested@6.2.0(postcss@8.4.49):
     dependencies:
